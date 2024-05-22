@@ -1,0 +1,7 @@
+.homemain{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    height: 100vh;
+}

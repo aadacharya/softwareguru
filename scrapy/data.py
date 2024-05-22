@@ -4,7 +4,7 @@ import os
 import glob
 import json
 
-directory =os.getcwd() + '/scrapy/json/' 
+directory =os.getcwd() + '/json/' 
 
 json_files = glob.glob(os.path.join(directory, '*.json'))
 json_datas = []
