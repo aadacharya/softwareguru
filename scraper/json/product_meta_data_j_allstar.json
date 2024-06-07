@@ -1,0 +1,925 @@
+{
+    "1": {
+        "0": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/blue-j/reviews",
+            "PRODUCT_NAME": "Blue J",
+            "RATING": 4.5,
+            "ABOUT": "Blue J is an AI-enabled software that helps tax professionals build the best insights as quickly as possible. With features like the prediction engine and decision finder, tax professionals can anticipate rulings on their tax scenarios, and find all the relevant decisions using factors rather than keywords. Blue J streamlines research with digital statute analysis and Folios (documents where our team of legal researchers have collected and annotated sections of the I.R.C. and Regulations that a.e relevant to specific topics). It also complements the planning and analysis work for tax practitioners with its purpose-built, user-friendly diagramming solution - Blue J Diagramming.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/hd_favicon/5a7d5d890caefc29275f01f00c889d8e/blue-j.svg",
+            "CATEGORIES": [
+                "Legal Research"
+            ]
+        },
+        "1": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/j-shops/reviews",
+            "PRODUCT_NAME": "J - Shops",
+            "RATING": 4.5,
+            "ABOUT": "Point of sale solution for jewelry shops and chain stores. Includes stock management and marketing analyzing functionality.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_5750a880f401785173308430ad17b644/j-shops.gif",
+            "CATEGORIES": [
+                "Jewelry Store Management"
+            ]
+        },
+        "2": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/j-2llc/reviews",
+            "PRODUCT_NAME": "J-2LLC",
+            "RATING": 5.0,
+            "ABOUT": "We offer a range of consulting services in both the public and private sectors, all designed to help your company reach its potential. From IT managed services to telecom engineering project management to technical staff augmentation, J-2 LLC will partner with you to best support your business. In addition, we offer IBM security products and solutions to mitigate cybersecurity risk in the information age.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_55dd0480f6a0f97c1aa4222f3a367055/j-2llc.png",
+            "CATEGORIES": [
+                "IBM Security VARs"
+            ]
+        },
+        "3": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/blue-j-diagramming/reviews",
+            "PRODUCT_NAME": "Blue J Diagramming",
+            "RATING": 4.5,
+            "ABOUT": "Blue J Diagramming is the intelligent diagramming solution built for law and accounting firms. With a user-friendly interface and specialized tools, practitioners are able to create diagrams and organizational charts in minutes, rather than hours. An intuitive editor allows you to: select conventional shapes from a drop-down menu; automate labels, actions, and relationships; select a variety of line types; and build multi-step transactions by duplicating diagrams. 50+ Quick Start templates .nclude org charts involving corporations and partnerships, reorganizations, liquidations, and mergers and acquisitions - all providing a substantial head start on the diagramming process. These templates are reviewed by an in-house team of legal and tax professionals, including Blue J Tax Director, Ben Willis and Senior Counsel, Susan Massey.\n\nDiagram review and revisions are also faster than ever with built-in collaboration. Teams can work together in real-time on building, reviewing, revising, and finalizing diagrams together in real-time - in a single platform. Don\u2019t get lost in email threads or lose track of the most current version of a diagram ever again.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_6ce37bb274d7fe1914c1806dc78f11ad/blue-j-diagramming.png",
+            "CATEGORIES": [
+                "Diagramming"
+            ]
+        },
+        "4": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/arthur-j-gallagher-co/reviews",
+            "PRODUCT_NAME": "Arthur J. Gallagher & Co.",
+            "RATING": 5.0,
+            "ABOUT": "Arthur J. Gallagher & Co helps clients address risk, protect their assets and recover from losses.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_93ca852084102e9566fe57db10493d1a/arthur-j-gallagher-co.jpg",
+            "CATEGORIES": [
+                "Benefits Consulting",
+                "HR Consulting"
+            ]
+        },
+        "5": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/j-walter-thompson-worldwide/reviews",
+            "PRODUCT_NAME": "J. Walter Thompson Worldwide",
+            "RATING": 0.0,
+            "ABOUT": "J. Walter Thompson is an advertising agency that provide creative ad development, campaign management, and strategic planning services and also offers brand development and specialized marketing services, including customer relationship marketing, event marketing, and sponsorships.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_d93a6e9b1e3219eb6ff0f1a59c259040/j-walter-thompson-worldwide.jpg",
+            "CATEGORIES": [
+                "Traditional Advertising",
+                "Experiential Marketing Agencies",
+                "Digital Marketing"
+            ]
+        },
+        "6": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/residential-hvac-load-j-calcs-mitsubishi-branded/reviews",
+            "PRODUCT_NAME": "Residential HVAC Load-J Calcs (Mitsubishi-Branded)",
+            "RATING": 3.0,
+            "ABOUT": "Residential HVAC Load Calculator is an ACCA-approved Manual J8 HVAC Load Calculator native app available for the Apple iPad",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_1e579790e523235b5c949396b008105f/residential-hvac-load-j-calcs-mitsubishi-branded.jpeg",
+            "CATEGORIES": [
+                "Construction Estimating"
+            ]
+        },
+        "7": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/intellij-idea/reviews",
+            "PRODUCT_NAME": "IntelliJ IDEA",
+            "RATING": 4.5,
+            "ABOUT": "IntelliJ IDEA includes an amazing set of tools which work out-of-the-box: support for Maven, Gradle and STS; integration with Git, SVN, Mercurial; built-in Database Tools; and many more.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/hd_favicon/345cf3094b01131abf0d6608092205fa/intellij-idea.svg",
+            "CATEGORIES": [
+                "Java Integrated Development Environments (IDE)"
+            ]
+        },
+        "8": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/bluej/reviews",
+            "PRODUCT_NAME": "BlueJ",
+            "RATING": 4.0,
+            "ABOUT": "BlueJ is a development environment that allows you to develop Java programs quickly and easily. Its main features are that it is: Simple, designed for teaching, interactive, portable, mature and innovative.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_6f0fbce397c3547cdf5e279e53814411/bluej.png",
+            "CATEGORIES": [
+                "Java Integrated Development Environments (IDE)"
+            ]
+        },
+        "9": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/imagej/reviews",
+            "PRODUCT_NAME": "ImageJ",
+            "RATING": 4.5,
+            "ABOUT": "ImageJ is written in Java, which allows it to run on Linux, Mac OS X and Windows, in both 32-bit and 64-bit modes.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_b4a88863cdc523d3afd241c6d04c9aca/imagej.gif",
+            "CATEGORIES": [
+                "Other Laboratory"
+            ]
+        },
+        "10": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/apache-log4j/reviews",
+            "PRODUCT_NAME": "Apache log4j",
+            "RATING": 4.5,
+            "ABOUT": "Apache Log4j 2 is an upgrade to Log4j that provides significant improvements over its predecessor, Log4j 1.x, and provides many of the improvements available in Logback while fixing some inherent problems in Logback architecture.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_b350900e1c1cde239f398145fc13d8f3/apache-log4j.jpg",
+            "CATEGORIES": [
+                "Log Monitoring"
+            ]
+        },
+        "11": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/j-j-keller-associates-inc/reviews",
+            "PRODUCT_NAME": "J.J. Keller & Associates, Inc.",
+            "RATING": 4.5,
+            "ABOUT": "J. J. Keller helps you increase safety awareness, reduce risk, follow best practices, improve safety training, and stay current with changing regulations.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_a3bb4997ec8ea41e1d014ed55bb2f160/j-j-keller-associates-inc.jpg",
+            "CATEGORIES": [
+                "HR Consulting",
+                "Health & Safety",
+                "Training & Development"
+            ]
+        },
+        "12": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/neo4j-graph-database/reviews",
+            "PRODUCT_NAME": "Neo4j Graph Database",
+            "RATING": 4.5,
+            "ABOUT": "Neo4 is a graph database, that brings data relationships to the fore. From companies offering personalized product and service recommendations; to websites adding social capabilities; to telcos diagnosing network issues; to enterprises reimagining master data, identity, and access models; organizations adopt graph databases as the best way to model, store and query both data and its relationships.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/hd_favicon/c73a6eabb2db2ffff9a8dd4fa90e29a3/neo4j-graph-database.svg",
+            "CATEGORIES": [
+                "Graph Databases",
+                "Database Management Systems (DBMS)",
+                "Database as a Service (DBaaS)"
+            ]
+        },
+        "13": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/jedit/reviews",
+            "PRODUCT_NAME": "jEdit",
+            "RATING": 4.5,
+            "ABOUT": "jEdit is a mature programmer's text editor with hundreds (counting the time developing plugins) of person-years of development behind it.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_f7c5c612b86b51c857c9391b6f7bf778/jedit.png",
+            "CATEGORIES": [
+                "Text Editor"
+            ]
+        },
+        "14": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/google-cloud-tools-for-intellij/reviews",
+            "PRODUCT_NAME": "Google Cloud Tools for IntelliJ",
+            "RATING": 4.5,
+            "ABOUT": "Using Cloud Tools for IntelliJ you can easily deploy Java backends for your cloud apps to the Google App Engine standard and flexible environments",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_31d0d04d5b933e830ac2af8644bdc770/google-cloud-tools-for-intellij.jpg",
+            "CATEGORIES": [
+                "Google Workspace Development Tools"
+            ]
+        },
+        "15": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/eclipse-aspectj/reviews",
+            "PRODUCT_NAME": "Eclipse AspectJ",
+            "RATING": 4.0,
+            "ABOUT": "aspectj is a seamless aspect-oriented extension to the Javatm programming language",
+            "LOGO": "https://images.g2crowd.com/uploads/vendor/image/5097/large_detail_1547562128.png",
+            "CATEGORIES": [
+                "Java Web Frameworks"
+            ]
+        },
+        "16": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/j2store/reviews",
+            "PRODUCT_NAME": "J2store",
+            "RATING": 4.0,
+            "ABOUT": "J2Store is a flexible shopping cart and ecommerce solution for Joomla.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_91edaca023678bb2f69084f3f104c797/j2store.PNG",
+            "CATEGORIES": [
+                "Installment Payment and Buy Now Pay Later (BNPL)"
+            ]
+        },
+        "17": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/jquery-mobile/reviews",
+            "PRODUCT_NAME": "jQuery Mobile",
+            "RATING": 3.5,
+            "ABOUT": "jQuery Mobile is a HTML5-based user interface system designed to make responsive web sites and apps that are accessible on all smartphone, tablet and desktop devices.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_cbf7ff02efe7d0dadca4c3178b21ee0c/jquery-mobile.png",
+            "CATEGORIES": [
+                "Mobile Development Frameworks"
+            ]
+        },
+        "18": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/jalbum/reviews",
+            "PRODUCT_NAME": "jAlbum",
+            "RATING": 4.5,
+            "ABOUT": "jAlbum consists of shareware cross-platform software for managing and creating digital photo galleries, and a paid-for photo sharing service",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_b64cc1f849602debbdd11c894bb2118b/jalbum.jpeg",
+            "CATEGORIES": [
+                "Photo Management"
+            ]
+        },
+        "19": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/jsonic/reviews",
+            "PRODUCT_NAME": "jSonic",
+            "RATING": 4.5,
+            "ABOUT": "jSonic Business Process Management suite enables enterprise owners to align business processes with dynamic market conditions, statutory compliances and, customer and partner requirements. It is a comprehensive solution that improves the bottom line of organizations by increasing process efficiency, optimizing resource utilization and automating human workflow.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_309f9051211e9002cbba5561bd6d7d14/jsonic.gif",
+            "CATEGORIES": [
+                "Process Mining"
+            ]
+        }
+    },
+    "2": {
+        "0": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/jpdfeditor/reviews",
+            "PRODUCT_NAME": "jPDFEditor",
+            "RATING": 5.0,
+            "ABOUT": "jPDFEditor is intended for developers and integrators. For end-users, Qoppa Software offers PDF Studio, our advanced end-user desktop PDF editor for Mac, Windows and Linux based on our same solid PDF technology.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_5145ab8311c3ebc934c273b9b0b38878/jpdfeditor.png",
+            "CATEGORIES": [
+                "PDF Editor"
+            ]
+        },
+        "1": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/jpdfweb/reviews",
+            "PRODUCT_NAME": "jPDFWeb",
+            "RATING": 5.0,
+            "ABOUT": "jPDFWeb is a Java library to convert PDF documents to SVG / HTML5. The library can save to the local file system or to an output stream to be able to serve the document directly to a client browser when working within a J2EE server.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_5145ab8311c3ebc934c273b9b0b38878/jpdfweb.png",
+            "CATEGORIES": [
+                "File Converter"
+            ]
+        },
+        "2": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/jplayer/reviews",
+            "PRODUCT_NAME": "jPlayer",
+            "RATING": 4.5,
+            "ABOUT": "jQuery HTML5 audio/video library.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_b9b4a820ff6f9f5673ff8a505c46cfc5/jplayer.png",
+            "CATEGORIES": [
+                "Other Video"
+            ]
+        },
+        "3": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/jbilling/reviews",
+            "PRODUCT_NAME": "jBilling",
+            "RATING": 4.5,
+            "ABOUT": "jBilling is a cloud based billing platform.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_6ecc1f6b70f9ef8359355bd418526d27/jbilling.jpg",
+            "CATEGORIES": [
+                "Billing",
+                "Subscription Billing"
+            ]
+        },
+        "4": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/jpdfprocess/reviews",
+            "PRODUCT_NAME": "jPDFProcess",
+            "RATING": 5.0,
+            "ABOUT": "jPDFProcess is a Java library to create and manipulate with PDF documents that can be used to deliver customized PDF content to your users or to process incoming PDF content. The library has a simple interface to work with PDF documents and is designed to be integrated easily and seamlessly into your PDF document workflow.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_5145ab8311c3ebc934c273b9b0b38878/jpdfprocess.png",
+            "CATEGORIES": [
+                "PDF Editor"
+            ]
+        },
+        "5": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/cheerpj/reviews",
+            "PRODUCT_NAME": "CheerpJ",
+            "RATING": 4.0,
+            "ABOUT": "CheerpJ is the Java compiler for the web. CheerpJ is a Java bytecode to JavaScript compiler, compatible with 100% of Java, which allows converting any Java SE application, Java library or Java Applet into a web application.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/hd_favicon/4cb54d345f1fef7363f564296959d3bb/cheerpj.svg",
+            "CATEGORIES": [
+                "Java Web Frameworks"
+            ]
+        },
+        "6": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/jqt/reviews",
+            "PRODUCT_NAME": "jQT",
+            "RATING": 3.5,
+            "ABOUT": "A Zepto/jQuery plugin for mobile web development on the iPhone,Android, iPod Touch, and other forward-thinking devices.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_635910c6e31b15d1a89955f23fe66ec4/jqt.png",
+            "CATEGORIES": [
+                "Other Mobile Development"
+            ]
+        },
+        "7": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/jmonkeyengine/reviews",
+            "PRODUCT_NAME": "jMonkeyEngine",
+            "RATING": 4.5,
+            "ABOUT": "jMonkeyEngine is an open source game engine for Java game developers to create 3D games using modern technology.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_137f20e7de8cc81f1054b6a20dbf5108/jmonkeyengine.png",
+            "CATEGORIES": [
+                "Game Engine"
+            ]
+        },
+        "8": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/nexj-crm/reviews",
+            "PRODUCT_NAME": "NexJ CRM",
+            "RATING": 4.5,
+            "ABOUT": "An innovative provider of next generation enterprise customer relationship management (CRM) solutions for financial services, insurance, and healthcare.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/hd_favicon/c1a9da8202dd6fefc610728d3a2dfa54/nexj-crm.svg",
+            "CATEGORIES": [
+                "Financial Services CRM"
+            ]
+        },
+        "9": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/deeplearning4j/reviews",
+            "PRODUCT_NAME": "Deeplearning4J",
+            "RATING": 3.5,
+            "ABOUT": "Deeplearning4j is the first commercial-grade, open-source, distributed deep-learning library written for Java and Scala it integrated with Hadoop and Spark, to be used in business environments on distributed GPUs and CPUs that aims to be cutting-edge plug and play, more convention than configuration, which allows for fast prototyping for non-researchers.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_36080375464c80f00a89a813fcea8e97/deeplearning4j.jpg",
+            "CATEGORIES": [
+                "Artificial Neural Network",
+                "Natural Language Understanding (NLU)"
+            ]
+        },
+        "10": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/jrestaurant-pos/reviews",
+            "PRODUCT_NAME": "jRestaurant POS",
+            "RATING": 5.0,
+            "ABOUT": "jRestaurant POS provides table service and fine dining software, bar and nightclub software, pizza and delivery software, fast food and quick service software.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_33d5779a0a41d049dff4144e66c01cab/jrestaurant-pos.png",
+            "CATEGORIES": [
+                "Restaurant POS"
+            ]
+        },
+        "11": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/red-hat-jboss-data-virtualization/reviews",
+            "PRODUCT_NAME": "Red Hat jBoss Data Virtualization",
+            "RATING": 4.0,
+            "ABOUT": "Red Hat JBoss Data Virtualization is a data supply and integration solution that sits in front of multiple data sources and allows them to be treated as single source, delivering the needed data in the required form at the right time to any application or user.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_c4081b322817b2076b1ad5206c9df6b8/red-hat-jboss-data-virtualization.jpg",
+            "CATEGORIES": [
+                "Data Virtualization"
+            ]
+        },
+        "12": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/neo4j-graph-data-science/reviews",
+            "PRODUCT_NAME": "Neo4j Graph Data Science",
+            "RATING": 4.5,
+            "ABOUT": "Neo4j Graph Data Science is an analytics and ML engine that uses the relationships in your data to improve predictions. It plugs into enterprise data ecosystems so you can get more data science projects into production quickly. Using pretuned graph algorithms, data scientists can explore billions of data points in seconds to identify hidden connections and generate compelling visualizations that lead to better stakeholder decision making. Practical business applications and operat from the context-first analysis that only graphs can provide across projects like recommendation engines, anomaly and fraud detection, route optimization, marketing, network analysis, and many more.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/hd_favicon/291a8b145499648316b1bdc5ae871c54/neo4j-graph-data-science.svg",
+            "CATEGORIES": [
+                "Data Science and Machine Learning Platforms",
+                "Machine Learning",
+                "Predictive Analytics"
+            ]
+        },
+        "13": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/j2launch-toolsuite/reviews",
+            "PRODUCT_NAME": "j2launch Toolsuite",
+            "RATING": 5.0,
+            "ABOUT": "Just2easy is an easy to use complete LMS , Learning Platform and Virtual learning Environment (VLE) designed from the ground up for education ages 4 to 14, packed with creativity and learning apps, games, resources and activities spanning the whole curriculum including spelling games, times tables practice, assessment and feedback, behaviour and class management tools.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_bb9df96dbf86551edfb19e3997637c2a/j2launch-toolsuite.png",
+            "CATEGORIES": [
+                "Online Learning Platform",
+                "Classroom Management"
+            ]
+        },
+        "14": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/cloud4j-website-builder/reviews",
+            "PRODUCT_NAME": "Cloud4J - Website Builder",
+            "RATING": 3.5,
+            "ABOUT": "Cloud4J enables users to quickly create, manage, and track Web Sites using Salesforce instance.",
+            "LOGO": "https://www.g2.com/assets/fallback/default-6632ce065b4875adb88aec465e288328b3a998ba2d0d6e27ffe5a7ea65497efc.png",
+            "CATEGORIES": [
+                "Website Builder"
+            ]
+        },
+        "15": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/requirements-management-for-jira-r4j/reviews",
+            "PRODUCT_NAME": "Requirements Management for JIRA (R4J)",
+            "RATING": 5.0,
+            "ABOUT": "The future of requirements management has arrived.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_ce852645e328537020151bdb6e8eaa27/requirements-management-for-jira-r4j.png",
+            "CATEGORIES": [
+                "Requirements Management"
+            ]
+        },
+        "16": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/jacademy-school-management-system/reviews",
+            "PRODUCT_NAME": "jAcademy School Management System",
+            "RATING": 4.5,
+            "ABOUT": "jAcademy is a School Management System which offers the opportunity to connect all facets of school management seamlessly through one common database, providing efficient timely access to any platform without limitation.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_0fcb5aa381c9149b4f1d19d297d590ea/jacademy-school-management-system.png",
+            "CATEGORIES": [
+                "School Management"
+            ]
+        },
+        "17": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/license4j-floating-license-server-4fdc1c7d-49f5-418d-85e4-9ff1570fc710/reviews",
+            "PRODUCT_NAME": "License4J Floating License Server",
+            "RATING": 2.5,
+            "ABOUT": "Floating License Server is a small server application responsible for hosting and management of floating licenses generated by License4J License Manager.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_dcb7126ad72b24dd90f6ceafac5c710f/license4j-floating-license-server-4fdc1c7d-49f5-418d-85e4-9ff1570fc710.png",
+            "CATEGORIES": [
+                "E-commerce Fraud Protection"
+            ]
+        },
+        "18": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/jquery-ui/reviews",
+            "PRODUCT_NAME": "JQuery UI",
+            "RATING": 3.5,
+            "ABOUT": "jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_fc701efd1efff78ed459a71a79633040/jquery-ui.png",
+            "CATEGORIES": [
+                "Other Web Frameworks"
+            ]
+        },
+        "19": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/progress-telerik/reviews",
+            "PRODUCT_NAME": "Progress Telerik",
+            "RATING": 4.5,
+            "ABOUT": "Progress Telerik provides controls and reporting for .NET Web (Blazor, ASP.NET Core, ASP.NET MVC, ASP.NET AJAX), JavaScript Web (Angular, React, Vue, jQuery), .NET Desktop (WPF, WinForms, WinUI, UWP), .NET Mobile (Xamarin, MAUI), Embedded Reporting, Automated Testing and Mocking tools.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_a250f629735afab4df91e202bf8f6b10/progress-telerik.png",
+            "CATEGORIES": [
+                "Component Libraries",
+                "Low-Code Development Platforms",
+                "Application Development Platforms"
+            ]
+        }
+    },
+    "3": {
+        "0": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/knack/reviews",
+            "PRODUCT_NAME": "Knack",
+            "RATING": 4.0,
+            "ABOUT": "Knack enables anyone to build simple web apps and online databases. You can import data from spreadsheets or define it from scratch, and then build interfaces to display and manage that data using elements like forms, tables, and search. Apps can be easily embedded into any website and then further styled or manipulated via jQuery.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/hd_favicon/155fbb5f200f2ab055d80b1417c5c4b2/knack.svg",
+            "CATEGORIES": [
+                "Application Development Platforms",
+                "No-Code Development Platforms",
+                "Low-Code Development Platforms",
+                "Relational Databases",
+                "CRM",
+                "Online Form Builder"
+            ]
+        },
+        "1": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/devexpress/reviews",
+            "PRODUCT_NAME": "DevExpress",
+            "RATING": 5.0,
+            "ABOUT": "DevExpress engineers feature-complete Presentation Controls, IDE Productivity Tools, Business Application Frameworks, and Reporting / Dashboard Systems for Visual Studio, Delphi, HTML5 or iOS & Android development. Our product line includes UI components and libraries for desktop and mobile development (WinForms / WPF / WinUI / MAUI / Xamarin / VCL), the web (ASP.NET Core / Blazor / Web Forms / MVC / JavaScript: Angular, React, Vue, jQuery), Office File API, .NET Application Frameworks, ORM.Tools, and End-to-End Web Testing.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_a57b152e38712ef08473c51e9cce49c8/devexpress.png",
+            "CATEGORIES": [
+                "Component Libraries",
+                "JavaScript Web Frameworks",
+                ".NET Integrated Development Environments (IDE)",
+                "Document Generation",
+                "Mobile Development Frameworks",
+                "Application Development Platforms",
+                "Data Visualization Libraries",
+                "Low-Code Development Platforms",
+                "PDF SDKs"
+            ]
+        },
+        "2": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/datatables/reviews",
+            "PRODUCT_NAME": "Datatables",
+            "RATING": 4.5,
+            "ABOUT": "Datatables is a plug-in for the jQuery Javascript library. It is a tool, build upon the foundations of progressive enhancement, that adds all of these advanced features to any HTML table. It helps for adding sorting and paging and filtering abilities.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_01f10092d234ba97769716870beb1eb1/datatables.jpeg",
+            "CATEGORIES": [
+                "Other Web Frameworks"
+            ]
+        },
+        "3": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/jqplot/reviews",
+            "PRODUCT_NAME": "jqPlot",
+            "RATING": 4.5,
+            "ABOUT": "jqPlot is a plotting and charting plugin for the jQuery Javascript framework, produces a line, bar and pie charts.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_ebab177cced93fcf4059b58a6e52eb62/jqplot.jpg",
+            "CATEGORIES": [
+                "Other Web Frameworks"
+            ]
+        },
+        "4": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/wow-slider/reviews",
+            "PRODUCT_NAME": "WOW Slider",
+            "RATING": 4.0,
+            "ABOUT": "WOW Slider is a jQuery slider with stunning visual effects and tons of professionally made templates. Packed with a point-and-click wizard for Mac & Win.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_900ebd6b01c376288824f083b2063ec8/wow-slider.png",
+            "CATEGORIES": [
+                "Other Web Frameworks"
+            ]
+        },
+        "5": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/react-bootstrap/reviews",
+            "PRODUCT_NAME": "React Bootstrap",
+            "RATING": 4.5,
+            "ABOUT": "React-Bootstrap replaces the Bootstrap JavaScript. Each component has been built from scratch as a true React component, without unneeded dependencies like jQuery.",
+            "LOGO": "https://www.g2.com/assets/fallback/default-6632ce065b4875adb88aec465e288328b3a998ba2d0d6e27ffe5a7ea65497efc.png",
+            "CATEGORIES": [
+                "Component Libraries"
+            ]
+        },
+        "6": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/thena/reviews",
+            "PRODUCT_NAME": "Thena",
+            "RATING": 5.0,
+            "ABOUT": "Email is old. Slack is new. Communicate with your customers from their favorite messaging app, where they already communicate with their teams. Thena makes it easy for customers to open requests, attach files and launch chat conversations in sync with internal tools - all from the convenience of Slack. Automate your communications, reduce human errors and reduce resolution times by 30%. Thena started in April 2022 by former Branch and Goldman Sachs executives with a vision of redomer communication and intelligence. We raised pre-seed from Pejman Nozad of Pear VC, Ben Narasin of Tenacity Fund, Mike Molinet of Branch, Michael Katz of mParticle, Coby Berman of Radar, J Zac of Lattice and others.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/hd_favicon/14ec8e1013c6d90a4051486bf1c1d68a/thena.svg",
+            "CATEGORIES": [
+                "Digital Employee Experience (DEX) Management",
+                "Customer Communications Management",
+                "Help Desk",
+                "Proactive Notification",
+                "Conversational Support"
+            ]
+        },
+        "7": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/interloc-maximo/reviews",
+            "PRODUCT_NAME": "Maximo",
+            "RATING": 4.5,
+            "ABOUT": "Designed with a J2EE component-based architecture, Maximo can be deployed on a single machine for small to mid-sized companies, yet its scalability and performance meet the demands of global, distributed enterprises with multiple organizations and sites, that operate using multiple languages and currencies.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_1c7685b38ed3f0f82d5b94dfd578079f/interloc-maximo.png",
+            "CATEGORIES": [
+                "Mobility Consulting"
+            ]
+        },
+        "8": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/trusaic-irs-audit-services/reviews",
+            "PRODUCT_NAME": "Trusaic IRS Audit Services",
+            "RATING": 5.0,
+            "ABOUT": "Trusaic offers essential guidance and audit support, every step of the way. Trusaic will work with your organization to quickly and effectively respond to IRS penalty notices (Letter 226J, Letter 5005A, Notice CP220J, & Letter 5699), achieve full ACA compliance, and strengthen your business by optimizing data, reducing costs, and avoiding IRS penalties.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/hd_favicon/5b292f33c79798c79f7308cc3d588f67/trusaic-irs-audit-services.svg",
+            "CATEGORIES": [
+                "Other HR"
+            ]
+        },
+        "9": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/bootstrap-jquery-datatable/reviews",
+            "PRODUCT_NAME": "BootStrap Jquery DataTable",
+            "RATING": 4.0,
+            "ABOUT": "Microsoft .NET Bootstrap jQuery DataTables form a powerful combination for displaying grid view-based custom control with built-in options like Paging, Sorting, and Searching functionality. Microsoft .NET provides the back-end functionality, Bootstrap provides the front-end layout and design, jQuery simplifies client-side scripting, and DataTables enhances the display and manipulation of data in HTML tables.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_8fafd304ec0b650368d3d71b7b380fb5/bootstrap-jquery-datatable.png",
+            "CATEGORIES": [
+                "Other Development"
+            ]
+        },
+        "10": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/findem/reviews",
+            "PRODUCT_NAME": "Findem",
+            "RATING": 4.5,
+            "ABOUT": "Findem is the only talent acquisition, candidate relationship management, and talent intelligence solution that defines people with millions of human data points, not by their resume. This depth of data is turned into insights with AI to fuel Findem\u2019s platform end-to-end, empowering talent teams to search, hire, nurture, measure and plan with unmatched precision, at record speed. With Findem, customers like J&J, Adobe, RingCentral and Intuitive Surgical are able to hire exactly t their business needs at scale. Visit us at www.findem.ai.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/hd_favicon/a7001347f63a16739420c1c168198396/findem.svg",
+            "CATEGORIES": [
+                "Recruiting Automation",
+                "Diversity Recruiting",
+                "Talent Intelligence",
+                "Recruitment Platforms"
+            ]
+        },
+        "11": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/flot/reviews",
+            "PRODUCT_NAME": "Flot",
+            "RATING": 4.0,
+            "ABOUT": "Flot is a pure JavaScript plotting library for jQuery, with a simple usage and interactive features.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_725c48350152643f11c67c5d665c6fc2/flot.png",
+            "CATEGORIES": [
+                "Other Web Frameworks"
+            ]
+        },
+        "12": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/zepto-js/reviews",
+            "PRODUCT_NAME": "Zepto.Js",
+            "RATING": 4.0,
+            "ABOUT": "Zepto.Js is an aerogel-weight jQuery-compatible JavaScript library.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_4548a71b3b1cf168af15e8bbe1daa7aa/zepto-js.png",
+            "CATEGORIES": [
+                "JavaScript Web Frameworks"
+            ]
+        },
+        "13": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/fitvids-js/reviews",
+            "PRODUCT_NAME": "Fitvids.Js",
+            "RATING": 4.5,
+            "ABOUT": "A lightweight, easy-to-use jQuery plugin for fluid width video embeds",
+            "LOGO": "https://www.g2.com/assets/fallback/default-6632ce065b4875adb88aec465e288328b3a998ba2d0d6e27ffe5a7ea65497efc.png",
+            "CATEGORIES": [
+                "JavaScript Web Frameworks"
+            ]
+        },
+        "14": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/smartmenu/reviews",
+            "PRODUCT_NAME": "SmartMenu",
+            "RATING": 3.5,
+            "ABOUT": "SmartMenus is a jQuery Website Menu Plugin.",
+            "LOGO": "https://www.g2.com/assets/fallback/default-6632ce065b4875adb88aec465e288328b3a998ba2d0d6e27ffe5a7ea65497efc.png",
+            "CATEGORIES": [
+                "Other Office",
+                "CMS Tools"
+            ]
+        },
+        "15": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/amazing-slider/reviews",
+            "PRODUCT_NAME": "Amazing Slider",
+            "RATING": 3.5,
+            "ABOUT": "Amazing Slider is a Windows and Mac app that enables users to create beautiful, professional, responsive jQuery Slider.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_725908ded4e5295ff34b236432badb74/amazing-slider.png",
+            "CATEGORIES": [
+                "Other Web Frameworks"
+            ]
+        },
+        "16": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/joyride/reviews",
+            "PRODUCT_NAME": "JoyRide",
+            "RATING": 5.0,
+            "ABOUT": "Joyride is an easy to configure jQuery site tour wizard.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_119cd5b7e786536d061c5d67faaba778/joyride.jpg",
+            "CATEGORIES": [
+                "Digital Adoption Platform"
+            ]
+        },
+        "17": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/bluedragon/reviews",
+            "PRODUCT_NAME": "BlueDragon",
+            "RATING": 5.0,
+            "ABOUT": "BlueDragon offers CFML compatibility and options to deploy on J2EE and .NET.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_fae1505da9e394b318eb341ee6198141/bluedragon.jpg",
+            "CATEGORIES": [
+                "Java Web Frameworks"
+            ]
+        },
+        "18": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/codetogether/reviews",
+            "PRODUCT_NAME": "CodeTogether",
+            "RATING": 4.5,
+            "ABOUT": "A tool that lets you live share your IDE and coding sessions. Host a session from VS Code, IntelliJ, or Eclipse, and guests join from their IDE or a browser. Perfect for pair programming, mob programming, code review, project design, TDD, unit testing, education, interviews, remote development, and more. Projects remain on your computer\u2014only required data is relayed to participants and our backend using full end-to-end source encryption. An on-premises version is also available that urce behind your firewall.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_1e6cbf1efbb14316a5c8e1a0eff337c6/codetogether.png",
+            "CATEGORIES": [
+                "Peer Code Review"
+            ]
+        },
+        "19": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/illuminated-cloud/reviews",
+            "PRODUCT_NAME": "Illuminated Cloud",
+            "RATING": 5.0,
+            "ABOUT": "Illuminated Cloud is a powerful Force.com development tool hosted within JetBrains IntelliJ IDEA.",
+            "LOGO": "https://www.g2.com/assets/fallback/default-6632ce065b4875adb88aec465e288328b3a998ba2d0d6e27ffe5a7ea65497efc.png",
+            "CATEGORIES": [
+                "Other Integrated Development Environments (IDE)"
+            ]
+        }
+    },
+    "4": {
+        "0": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/pickadate-js/reviews",
+            "PRODUCT_NAME": "Pickadate.Js",
+            "RATING": 4.5,
+            "ABOUT": "Pickadate.Js is an open source project, for the mobile-friendly, responsive, and lightweight jQuery date and time input picker.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_581933af81ecfee275e89cba4c4c3b0a/pickadate-js.png",
+            "CATEGORIES": [
+                "JavaScript Web Frameworks"
+            ]
+        },
+        "1": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/apache-scout/reviews",
+            "PRODUCT_NAME": "Apache Scout",
+            "RATING": 3.5,
+            "ABOUT": "Apache Scout is an implementation of the JSR 93 (JAXR). It provides an implementation to access UDDI registries (particularly Apache jUDDI) in a standard way.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_b350900e1c1cde239f398145fc13d8f3/apache-scout.jpg",
+            "CATEGORIES": [
+                "XML Databases"
+            ]
+        },
+        "2": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/pchunter-rms/reviews",
+            "PRODUCT_NAME": "PcHunter RMS",
+            "RATING": 2.5,
+            "ABOUT": "Recruiting and Staffing Management Software Move beyond resume database and applicant tracking software with Micro J.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_09b754441bcc6f010142e021ad9e7928/pchunter-rms.gif",
+            "CATEGORIES": [
+                "Staffing"
+            ]
+        },
+        "3": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/radsystems-studio/reviews",
+            "PRODUCT_NAME": "Radsystems Studio",
+            "RATING": 5.0,
+            "ABOUT": "RadSystems is a robust integrated development environment tool and Low-code software that facilitates rapid application development process by reducing redundant coding time. RadSystems applications can be generated through ASP.NET Core, Python Flask, PHP Laravel, Node Express.js, Vue.js, and Quasar Framework. You can also build traditional or classic web applications using Bootstrap, jQuery, and Laravel. By setting up modules and plug-ins, adding custom CSS and JavaScript codes, and cr.ating REST APIs, user can enhance and extend the capabilities of their applications.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_4fb6a8ea5138134e8bd3d9cc740c47a6/radsystems-studio.png",
+            "CATEGORIES": [
+                "Application Development Platforms"
+            ]
+        },
+        "4": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/hvac-residential-load-calcs-hd/reviews",
+            "PRODUCT_NAME": "HVAC Residential Load Calcs - HD",
+            "RATING": 5.0,
+            "ABOUT": "HVAC Residential Load Calcs HD is a HVAC Manual J8 load calculation mobile app for iPad.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_ee29ce991fc4266fe716dc00fe8009e1/hvac-residential-load-calcs-hd.jpeg",
+            "CATEGORIES": [
+                "Construction Estimating"
+            ]
+        },
+        "5": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/graphenedb/reviews",
+            "PRODUCT_NAME": "GrapheneDB",
+            "RATING": 4.0,
+            "ABOUT": "GrapheneDB is the world's first fully managed hosting service for the world's leading graph database Neo4j.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_8d6d5722f39559a14b1258c809b7fa77/graphenedb.png",
+            "CATEGORIES": [
+                "Other Analytics"
+            ]
+        },
+        "6": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/dotultimate/reviews",
+            "PRODUCT_NAME": "dotUltimate",
+            "RATING": 5.0,
+            "ABOUT": "The World's Leading Vendor of Professional Development Tools. Creators of IntelliJ IDEA, ReSharper, PyCharm, TeamCity, Kotlin and more.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_aad31b442657a24529171a3b0717498a/dotultimate.jpg",
+            "CATEGORIES": [
+                "Other Development"
+            ]
+        },
+        "7": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/superfish/reviews",
+            "PRODUCT_NAME": "Superfish",
+            "RATING": 4.5,
+            "ABOUT": "Superfish is an enhanced Suckerfish-style menu jQuery plugin that takes an existing pure CSS drop-down menu (so it degrades gracefully without JavaScript) and adds much-sought-after enhancements",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_f6a532239126bb749afc65978f5dfc7d/superfish.jpg",
+            "CATEGORIES": [
+                "Other Development"
+            ]
+        },
+        "8": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/culturewise/reviews",
+            "PRODUCT_NAME": "CultureWise",
+            "RATING": 5.0,
+            "ABOUT": "CultureWise is the turnkey operating system for culture. It was created by David J. Friedman and is based on the leadership lessons he learned and taught in his decades as an award-winning CEO, speaker, author, and consultant.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_e6ab26ce8578e14ca2d827fefe58b240/culturewise.jpg",
+            "CATEGORIES": [
+                "Operating System"
+            ]
+        },
+        "9": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/ox-security/reviews",
+            "PRODUCT_NAME": "OX Security",
+            "RATING": 5.0,
+            "ABOUT": "OX ensures the security and integrity of the modern CI/CD pipelines from cloud to code - continuously protecting from supply chain risks like Solarwinds, Log4j, and other build stage vulnerabilities that followed the rapid transformation to agile development, microservices and Open Source integrations.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_ee8ad69896e4b748fb4fe2bd687f49f7/caac121f-05c4-4835-accd-f76bd7a021f3.jpg",
+            "CATEGORIES": [
+                "Software Supply Chain Security Tools",
+                "Static Application Security Testing (SAST)",
+                "Secure Code Review",
+                "Software Composition Analysis",
+                "Software Bill of Materials (SBOM)",
+                "Application Security Posture Management (ASPM)"
+            ]
+        },
+        "10": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/logix-shapers-offshore-services-pvt-ltd/reviews",
+            "PRODUCT_NAME": "Logix Shapers Offshore Services Pvt Ltd",
+            "RATING": 5.0,
+            "ABOUT": "Logix Shapers is an acknowledged and trusted Website Development Company located in Noida sector-62. The firm got incorporated in 2014 and since the establishment of the IT firm, it has efficiently delivered more than 300 projects. We have a flexible, highly-skilled, and diverse team to work side-by-side with our clients/stakeholders regularly. Logix Shapers efficiently understands the needs and requirements of the clients and converts organizational data into an actionable form. am of professionals that crafts the interfaces for the users that are tempting and interactive. Our team works on advanced technology like C#, Ajax, Query, jQuery, Json, JavaScript, Angular JS, MVC, and Microsoft technologies like Asp.Net. And proficiently develops mobile apps on various platforms like Android, MAC/IOS, Windows, J2ME, Xamarin, and Hybrid. Our proven work experience in the Software development Industry offers you an extra edge over your competitors.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_1f5479cb954ed1c4aaa55d5e9f1ea28d/logix-shapers-offshore-services-pvt-ltd.png",
+            "CATEGORIES": [
+                "Software Developer Services"
+            ]
+        },
+        "11": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/2ab-ilock-security-services/reviews",
+            "PRODUCT_NAME": "2AB iLock Security Services",
+            "RATING": 4.5,
+            "ABOUT": "iLock Security Services includes application level access control services for Java, C/C++ and Web environments. jLock, webLock and c/Lock enable companies to define access security policy for applications and centrally administer the policy.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_0bc200ac5f53fcc6912eb0649b186c3b/2ab-ilock-security-services.jpg",
+            "CATEGORIES": [
+                "Privileged Access Management (PAM)"
+            ]
+        },
+        "12": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/surveyjs/reviews",
+            "PRODUCT_NAME": "SurveyJS",
+            "RATING": 4.5,
+            "ABOUT": "SurveyJS is a modern, feature-rich and high-performance solution that allows to create online forms, surveys, or questionnaires using an easy-to-use, no-code, drag & drop free form builder tool. The majority of cloud services in the market only provide infrastructure and storage facilities for your surveys. SurveyJS went beyond the market offer. It comprises an open-source MIT licensed JavaScript SurveyJS survey library / runner to generate a JSON definition of your survey that c pasted in your application code or be retrieved from the database to create a dynamic form; a SurveyJS survey creator / form builder is an embeddable GUI-based form/survey builder that allows to create a self-hosted infrastructure for generating literally any type of multi-language surveys/forms one can imagine; a SurveyJS Analytics Pack that visualizes survey results as charts/tables in a dashboard; and a SurveyJS Export to PDF, a service exports survey responses as PDF files. SurveyJS integrates with many popular frameworks, including React, Angular, and Vue \u2013 while still remaining fully jQuery compatible. It\u2019s server- and database-agnostic. SurveyJS offers a choice of more than 35 question types, including text, drop-down, radio buttons, rating start etc. while also allowing to tailor the existing question types to your needs or add new ones if they are not on the menu, for example, by integrating a popular JavaScript widgets. Finally, with SurveyJS you can customize your survey/form design to your brand requirements easily adding any colors, logo, and fonts.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_13a21fde2687d5f0b2895247fd512dea/surveyjs.png",
+            "CATEGORIES": [
+                "Online Form Builder",
+                "Survey"
+            ]
+        },
+        "13": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/adept-dynamics/reviews",
+            "PRODUCT_NAME": "Adept Dynamics",
+            "RATING": 5.0,
+            "ABOUT": "At Adept Dynamics, we provide development expertise and services for Microsoft Dynamics 365 and the Power Platform. Our team consists of senior Dynamics 365 and Power Platform developers, Power BI data analysts, and agile project managers. Expertise - Dynamics 365 Sales, Dynamics 365 Marketing, Power Apps, Power Automate, and Power BI, Customer Insights, Customer Voice Services - Custom Development, Optimization, Integration, implementation, Automation, Reporting, and Agile Projec\nDevelopment Skills- .NET Framework, SQL, CSS, HTML5, Java, C#, jQuery, JavaScript, PHP, Visual Basic (VBA)",
+            "LOGO": "https://images.g2crowd.com/uploads/product/hd_favicon/ea9de137e294b03626b8135291ac3143/adept-dynamics.svg",
+            "CATEGORIES": [
+                "Microsoft Consulting Services",
+                "Business Intelligence (BI) Consulting",
+                "Digital Transformation Consulting"
+            ]
+        },
+        "14": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/kelleronlinea-safety-management-system/reviews",
+            "PRODUCT_NAME": "KellerOnline\u00ae Safety Management System",
+            "RATING": 4.0,
+            "ABOUT": "The KellerOnline\u00ae Safety Management Tool can help with these areas of your safety program.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_3bb57d2643e599957ed49beb99465302/kelleronlinea-safety-management-system.png",
+            "CATEGORIES": [
+                "Environmental Health and Safety"
+            ]
+        },
+        "15": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/testleft/reviews",
+            "PRODUCT_NAME": "TestLeft",
+            "RATING": 3.5,
+            "ABOUT": "Testleft empowers developers and advanced testers to build and run functional UI tests for web and desktop applications from within their favorite IDEs. With support for Visual Studio and Java IDEs such as IntelliJ and Eclipse, developers never have to leave the comfort of their ecosystem to validate application quality - meaning teams can quickly and easily shift left to deliver software faster.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/hd_favicon/1556043456/testleft.svg",
+            "CATEGORIES": [
+                "Automation Testing"
+            ]
+        },
+        "16": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/binocs/reviews",
+            "PRODUCT_NAME": "Binocs",
+            "RATING": 3.5,
+            "ABOUT": "Binocs is the global in digital planning, scheduling and performance management for life science organizations Our cloud-based system is used by more than 1,500 teams worldwide, in areas such as QC labs, QA departments, R&D labs, CGT production, CDMOs, clinical operations, and regulatory affairs. Clients such as GSK, Pfizer, J&J, Merck KGaA and Novartis have elevated their resource management and enhanced productivity, improved service levels, and increased employee retention with Binocs",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_8621539c8dddba33d64454cc4ba497aa/binocs.png",
+            "CATEGORIES": [
+                "Resource Management"
+            ]
+        },
+        "17": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/nosql-adapter-for-sap-process-orchestration-and-sap-integration-suite/reviews",
+            "PRODUCT_NAME": "NoSQL Adapter for SAP Process Orchestration and SAP Integration Suite",
+            "RATING": 4.0,
+            "ABOUT": "A NoSQL (often interpreted as \u201cNot only SQL\u201d) database is an unconventional database system which relies on data structure different from those used in the relational databases. NoSQL databases are increasingly used in big data and real time web applications. Advantco NoSQL adapter for SAP NetWeaver PI/PO enables you to read and write data from the un-conventional database with information in the SAP System. The NoSQL Adapter is based on the Adapter Framework and is executed by the pter Engine.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_f1e0264b033e8581dfd032f5310f5e27/nosql-adapter-for-sap-process-orchestration-and-sap-integration-suite.jpg",
+            "CATEGORIES": [
+                "Tools for ERP"
+            ]
+        },
+        "18": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/rocket-zena/reviews",
+            "PRODUCT_NAME": "Rocket Zena",
+            "RATING": 5.0,
+            "ABOUT": "ASG-Zena is a robust, enterprise-wide workload management solution for distributed operations environments that support \u201cevent-based\u201d scheduling as well as traditional time and date-based scheduling methodologies. ASG-Zena provides non-invasive integration of legacy applications, ERP, and newer, \u201cmessage aware\u201d environments such as .NET and J2EE that offer advanced IT process automation. From a single console, users can manage workloads and several scheduling points across multiple pcluding Windows , as well as multiple UNIX and Linux operating environments and on the AS/400. ASG-Zena improves efficiency and reduces costs. It also offers exception-based management, a highly scalable component-based architecture, fault tolerance, role-based security, and graphical drag-and-drop workload definition.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/hd_favicon/03e1e8323b8413bb4289d67694690b31/rocket-zena.svg",
+            "CATEGORIES": [
+                "Workload Automation"
+            ]
+        },
+        "19": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/apporio-infolabs/reviews",
+            "PRODUCT_NAME": "Apporio Infolabs",
+            "RATING": 5.0,
+            "ABOUT": "What Is Apporio Infolabs Here at Apporio Infolabs, we are creating scalable business solutions for the modern world. We believe to please our clients and their targeted customers with an advanced mobile app solution. Our on-demand taxi products are quite popular all over the world. We have multiple ready-made on-demand apps to help entrepreneurs and small businesses to start and innovate their businesses with the help of technology. However, our expert developers love challenges, ke custom mobile app development projects as well.\n\nWondering what we will use to help you build your dream? Here is our technology stack:\n\nFor App Development\n\nJava, Kotlin, Swift, Objective C, React Native, Ionic, Flutter\n\nFrontend Development\n\nReact.js, Angular.js, Vue.js, jQuery, HTML, CSS\n\nBackend Development\n\nNode.js, Express.js, Python, PHP, Laravel, CodeIgniter\n\nDatabase \n\nPostgreSQL, MongoDb, MySQL",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_2438efde72b9a7130f4729521a9ec04c/apporio-infolabs.png",
+            "CATEGORIES": [
+                "Mobile App Development"
+            ]
+        }
+    },
+    "5": {
+        "0": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/dvt-eclipse-ide/reviews",
+            "PRODUCT_NAME": "DVT Eclipse IDE",
+            "RATING": 4.5,
+            "ABOUT": "For design and verification engineers who are working with Verilog, SystemVerilog, Verilog AMS, VHDL, UPF, CPF, e Language, PSS, SLN, or SDL, the Design and Verification Tools (DVT) Eclipse IDE is an integrated development environment (IDE) that significantly improves productivity. Unlike plain text editors providing regular expression based capabilities, the DVT Eclipse IDE compiles the code and signals errors as you type, speeds-up code writing using auto-complete and quick fix proposals, an. allows you to find anything you are looking for instantly.\n\nWhat the DVT Eclipse IDE can give you in seconds would likely have taken you several minutes or hours to find and do by hand.\n\nIt is similar to well-known programming tools like Visual Studio\u00ae, NetBeans\u00ae, and IntelliJ\u00ae that are commonly used in the software world.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_f50b4b3e97dc1ad961f278e6e6ff5490/dvt-eclipse-ide.png",
+            "CATEGORIES": [
+                "Other Integrated Development Environments (IDE)"
+            ]
+        },
+        "1": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/localize-io/reviews",
+            "PRODUCT_NAME": "localize.io",
+            "RATING": 4.5,
+            "ABOUT": "It is an interesting service that provides sdk and online update for ios and android apps translation. You can manage your localization files without the need to think about which version of the app you're updating. You also don't need to recompile the app each time you add a new language.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_8933586521f9ac18c28a40e874a544ac/localize-io.png",
+            "CATEGORIES": [
+                "Other Mobile Development"
+            ]
+        },
+        "2": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/codemr/reviews",
+            "PRODUCT_NAME": "CODEMR",
+            "RATING": 4.0,
+            "ABOUT": "CodeMR is an architectural software quality and static code analysis tool that supports multiple languages (Java, Scala, Kotlin, C++) and has integrations for multiple IDEs (Eclipse and IntelliJ). CodeMR visualizes code metrics and high level quality attributes (Coupling, Complexity, Size) for C++, Java and Kotlin and Scala projects in different views, such as Package Structure, TreeMap, Sunburst, Dependency and Graph Views. The graph visualization technique applied in CodeMR is simple yet.intuitive. CodeMR has different filtering options and supports custom queries. It visualizes high-level Object Oriented quality attributes and low level metrics. Quality attributes are derived from the combinations of several metrics. You can also create different HTML reports for the project.\n\nWith Community Edition you can extract up to 50 source files and 60 classes.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_d672056e473fdb4814275b4b0d574b98/codemr.png",
+            "CATEGORIES": [
+                "Java Development Tools"
+            ]
+        },
+        "3": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/smart-html-elements/reviews",
+            "PRODUCT_NAME": "Smart HTML Elements",
+            "RATING": 5.0,
+            "ABOUT": "UI Component Library for Angular, React, Vue.JS, Blazor & Javascript",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_9d0042f182465750abf245b47582f36b/smart-html-elements.png",
+            "CATEGORIES": [
+                "Component Libraries"
+            ]
+        },
+        "4": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/welding-electrode/reviews",
+            "PRODUCT_NAME": "welding electrode",
+            "RATING": 5.0,
+            "ABOUT": "E6013 AWS A5.1 E6013 ISO2560-A-E38 0 R1 12 GB/T 5117 E4313 Approved by: ABS CCS LR CE Description: It is a rutile type general purpose electrode for all positional welding. Suitable for welding of low carbon steel structure, especially for the welding of thin plate steel with short discontinuous weld and requirement of smooth welding pass. AC & DC. Welding Position: Diameters: 1.6mm,2.0mm, 2.5mm, 3.2mm, 4.0mm, 5.0mm. Typical Mechanical Properties:ength(MPa): 490\n Yield stress(MPa): 396\n Elongation (%): 26\n Impact values(\u226547J/-20\u2103): 82\n \n\n Typical Chemical Compositon:\n C Mn P S Si Ni Cr Mo V\n 0.08 0.43 0.026 0.021 0.21 0.04 0.011 0.007 0.009\n \n\n Welding Current: (AC/DC+)\n Diameter(mm) 2.5 3.2 4.0 5.0\n Current/A F/H 60-90 80-130 150-190 180-250\n Current/A V/OH 50-80 80-110 130-170 --\n \n\n Note:\n No need to bake before using, but please bake 30-60 minutes in 150\u2103 if the electrodes is humid.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_89cd6a3081858c14a17b998866ecb0fc/welding-electrode.jpg",
+            "CATEGORIES": [
+                "Other Vertical Industry"
+            ]
+        },
+        "5": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/revenue-ramp/reviews",
+            "PRODUCT_NAME": "Revenue Ramp",
+            "RATING": 5.0,
+            "ABOUT": "At Revenue Ramp we enable you with proven sales frameworks to land your first customers and close enterprise deals predictably. \ud83d\udfe2 Programs for Startup Founders 1\ufe0f\u20e3 Get your first $1M ARR 2\ufe0f\u20e3 Transition out of Founder-led Sales 3\ufe0f\u20e3 Find your repeatable sales motion Grab our free e-book: The Technical Founder's Guide to B2B Sales https://eu1.hubs.ly/H06jQLd0 \ud83d\udfe2 Trainings for Sales Teams: Outbound: 1\ufe0f\u20e3 Define your Ideal Customer Profile and Personas so you know how to generate need.\n\n2\ufe0f\u20e3 Build prospecting lists at your target accounts in record time\n\n3\ufe0f\u20e3 Boost your conversion rates using social selling\n\n4\ufe0f\u20e3 Write emails that get responses\n\n5\ufe0f\u20e3 Create cold call flows that book you qualified meetings\n\n6\ufe0f\u20e3  Design Outbound Campaigns that are relevant and timely\n\nClosing:\n\n1\ufe0f\u20e3 Master Discovery calls to sell bigger deals, faster, and with higher win rates\n\n2\ufe0f\u20e3 Learn to Sell WITH Buyers, not TO them\n\n3\ufe0f\u20e3 Run Demos that sell\n\n4\ufe0f\u20e3 Manage POCs to get the tech win every time\n\n5\ufe0f\u20e3 Build business cases Buyers can't refuse\n\n6\ufe0f\u20e3  Plan Account strategies to retain and grow Customers\n\n\n\ud83d\udfe2 Courses for Sales Reps: The Enterprise Sales Playbook\n\n1\ufe0f\u20e3 Complete Outbound Playbook (coming 2024)\n\n2\ufe0f\u20e3 Complete Closing Playbook (coming 2024)",
+            "LOGO": "https://images.g2crowd.com/uploads/product/hd_favicon/17cb781601844ab877cc05a0e756c634/revenue-ramp.svg",
+            "CATEGORIES": [
+                "Sales Consulting"
+            ]
+        },
+        "6": {
+            "PRODUCT_REVIEW_LINK": "https://www.g2.com/products/medcases-virtual-patient/reviews",
+            "PRODUCT_NAME": "Medcases Virtual Patient",
+            "RATING": 4.5,
+            "ABOUT": "Medcases is a unique e-learning platform for medical students and doctors, which, by means of artificial intelligence algorithms, allows them to develop the skills of correct diagnosis and treatment of virtual patients. What problem does it solve? 1. Lack of access to patients 2. Practical knowledge is only available in the hospital or clinic 3. Practical skills cannot be acquired without independent decision making 4. Fear of making decisions among junior doctors due to concerns ab health related consequences for the patient\n5. Knowledge contained in textbooks quickly becomes outdated\n\nHow does it solve these problems?\n1. Practical knowledge available on the phone: taking patient history, physical exam, ordering lab and imaging tests, treatment\n2. The ability to make independent decisions without fear of making mistakes\n3. Knowing the consequences of your decisions without negatively impacting a real patient in the form of an accessible summary.\n4. Possibility of discussion in the form of sharing comments under each medical case and test,\n5. With Medcases is a mobile app, as well as web application, so you can learn anytime 24/7\n6. Medical knowledge contained in our clinical cases is constantly updated according to the latest guidelines of Polish and World Scientific Societies.",
+            "LOGO": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_3e434e5b611e8c57e5fac3ad09d1969e/medcases-virtual-patient.png",
+            "CATEGORIES": [
+                "Medical Simulation"
+            ]
+        }
+    }
+}
