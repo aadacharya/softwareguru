@@ -1,68 +1,70 @@
 {
-  "summary": "Photes.io is an AI-powered tool that automates note-taking by converting photos of slides, whiteboards, and other note-taking media into well-structured text notes. It offers real-time syncing, cross-device accessibility, and seamless integration with popular note-taking apps like Notion and Google Docs.",
+  "summary": "Cap Hacker is a free AI video caption generator that allows users to add captions to their videos without any watermarks. The tool is easy to use and supports 97 different languages. Cap Hacker also offers a variety of features that allow users to customize their captions, including the ability to change the font style, color, and background.",
   "categories": [
-    "Note-Taking",
-    "AI-Assisted",
-    "Image Recognition",
-    "Productivity",
-    "Collaboration"
+    "Video Editing",
+    "AI-Powered Tools",
+    "Content Creation",
+    "Accessibility Tools",
+    "Marketing Tools"
   ],
   "pros": [
-    "Effortless conversion of photos to text notes",
-    "Real-time synchronization across devices",
-    "Integration with popular note-taking apps",
-    "Easy organization and categorization of notes",
-    "Reduces manual note-taking and saves time"
+    "Free to use",
+    "No watermarks",
+    "Supports 97 different languages",
+    "Variety of customization options",
+    "User-friendly interface"
   ],
   "cons": [
-    "May not be as accurate as manual note-taking in all cases",
-    "Requires clear and well-lit images for optimal results",
-    "Limited editing capabilities within the tool itself",
-    "May face challenges with handwriting recognition",
-    "Subscription-based pricing model"
+    "May not be as accurate as paid captioning tools",
+    "Limited number of templates",
+    "Can be time-consuming to correct errors",
+    "Requires an internet connection to use",
+    "May not be suitable for all types of videos"
   ],
-  "useCases": [
+  "usecase": [
     {
-      "case": "Classroom Notes",
-      "details": "Photes.io can help students quickly capture and convert notes from classroom presentations, whiteboards, and handouts, making it easier to review and retain information."
+      "case": "Adding captions to videos for social media",
+      "details": "Cap Hacker can be used to add captions to videos that are shared on social media platforms such as Facebook, Twitter, and Instagram. This can help to make the videos more accessible to people who are deaf or hard of hearing, and can also help to improve engagement rates."
     },
     {
-      "case": "Meeting Minutes",
-      "details": "Attendees can take photos of important slides, whiteboard discussions, and notes during meetings. Photes.io can then convert these images into a comprehensive meeting summary, saving time and reducing the risk of missing key details."
+      "case": "Creating educational videos",
+      "details": "Cap Hacker can be used to create educational videos that are accessible to a wider audience. By adding captions to the videos, viewers who are deaf or hard of hearing can follow along with the content and learn from the videos."
     },
     {
-      "case": "Conference Recordings",
-      "details": "Photes.io can assist in extracting valuable insights from conference recordings. By converting slides and speaker notes into text, it enables attendees to easily reference and review key takeaways after the event."
+      "case": "Translating videos into different languages",
+      "details": "Cap Hacker can be used to translate videos into different languages. This can be useful for businesses that want to reach a global audience or for people who want to share videos with friends and family who speak different languages."
     },
     {
-      "case": "Personal Notes",
-      "details": "Individuals can use Photes.io to capture and digitize their personal notes, such as to-do lists, reminders, and ideas. These notes can then be easily accessed, organized, and shared."
+      "case": "Creating marketing videos",
+      "details": "Cap Hacker can be used to create marketing videos that are more engaging and effective. By adding captions to the videos, businesses can ensure that their message is heard by a wider audience."
     },
     {
-      "case": "Research and Analysis",
-      "details": "Researchers and analysts can leverage Photes.io to extract text from books, articles, and other printed materials. This can streamline the process of collecting and organizing data, saving time and effort."
+      "case": "Improving the accessibility of online content",
+      "details": "Cap Hacker can be used to improve the accessibility of online content for people with disabilities. By adding captions to videos, businesses and organizations can make their content more accessible to people who are deaf or hard of hearing."
     }
   ],
-  "toolFor": [
+  "toolfor": [
     {
-      "target": "Students",
-      "details": "Photes.io helps students capture and organize notes from various sources, making it easier to study and review."
-    },
-    {
-      "target": "Professionals",
-      "details": "Professionals can use Photes.io to efficiently take notes during meetings, conferences, and training sessions."
-    },
-    {
-      "target": "Researchers",
-      "details": "Researchers can leverage Photes.io to extract and organize text from various sources, facilitating data collection and analysis."
-    },
-    {
-      "target": "Individuals",
-      "details": "Individuals can use Photes.io to capture and manage personal notes, to-do lists, and other important information."
+      "target": "Content creators",
+      "details": "Cap Hacker is a valuable tool for content creators who want to add captions to their videos. The tool is easy to use and can help to make videos more accessible and engaging."
     },
     {
       "target": "Educators",
-      "details": "Educators can use Photes.io to create digital learning materials by converting slides and notes into accessible text."
+      "details": "Cap Hacker can be used by educators to create educational videos that are accessible to all students. By adding captions to the videos, educators can ensure that all students can learn from the videos, regardless of their hearing ability."
+    },
+    {
+      "target": "Businesses",
+      "details": "Cap Hacker can be used by businesses to create marketing videos that are more engaging and effective. By adding captions to the videos, businesses can ensure that their message is heard by a wider audience."
+    },
+    {
+      "target": "Non-profit organizations",
+      "details": "Cap Hacker can be used by non-profit organizations to create videos that are accessible to people with disabilities. By adding captions to the videos, non-profit organizations can make their content more accessible to people who are deaf or hard of hearing."
+    },
+    {
+      "target": "Individuals",
+      "details": "Cap Hacker can be used by individuals to create videos that are more accessible and engaging. By adding captions to the videos, individuals can share their stories and experiences with a wider audience."
     }
-  ]
+  ],
+  "pricing": "Free",
+  "rating": 9
 }

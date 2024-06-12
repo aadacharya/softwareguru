@@ -3,76 +3,164 @@ from selenium import webdriver
 import properties
 import json
 import os
-class Processor:
+from bs4 import BeautifulSoup
+import requests
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.alert import Alert
+import uuid
+import glob
+class Product_Meta_Processor: 
     def __init__(self) -> None:
-        self.json_file_path = [properties.categories_data_filepath,properties.usecase_data_filepath]
-        self.data_frame = self.get_dataframe(self.json_file_path)
-        text , urls = self.extract_website_text()
-        gemini_response = self.get_gemini_reponse(text)
-        # self.extract_website()
-        # self.check_product_url()
-    def get_dataframe(self,json_filepaths):
-        data = []
-        for eachpath in json_filepaths:
-            filelist = os.listdir(eachpath)
-            for eachfile in filelist:
-                if eachfile.endswith(".json"): 
-                    with open(f"{eachpath}/{eachfile}","r") as f : data+=json.load(f)["data"]
-        dataframe = pd.DataFrame(list({frozenset(item.items()): item for item in data}.values()))
-        dataframe.to_csv("Unique_Product_Meta.csv")
-        print(dataframe.shape,dataframe.columns)
-        print(dataframe.head)
-        return dataframe
-    def check_product_url(self):
-        count = 0 
-        for index, row in self.data_frame.iterrows():
-            import requests
-            res = requests.get(row["product_url"])
-            print(index,count)
-            if str(res.status_code).startswith("2"): count +=1 
-        print (count)
-        return count
-    def extract_website_text(self):
-        from bs4 import BeautifulSoup
-        import requests
-        for i in range(3):
-            url = self.data_frame.iloc[i]["product_url"]
-            url = url.split("?")[0]
-            res = requests.get(url)
-            text, urls = None , None
-            if str(res.status_code).startswith("2"):
-                soup = BeautifulSoup(res.content, 'html.parser')
-                text = soup.get_text()
-                links = soup.find_all('a', href=True)
-                urls = [link['href'] for link in links]
-            return text , urls
-                # print(url , len(urls), len(text))
-    def get_gemini_reponse(self):
-        import google.generativeai as genai 
-        genai.configure(api_key=properties.gemini_api)
-        model = genai.GenerativeModel('gemini-pro')
-        response = model.generate_content("https://topai.tools/")
-        return response.text
-    def get_screenshot(self,url,path):
+        self.product_topai_metadata_file = "Unique_Product_Meta.csv"
+        product_metadata = self.process_topai_metadata(self.product_topai_metadata_file)
+        self.runner(product_metadata)
+    def runner(self,product_metadata):
+        index = 0 
+        for counter in range(index,index+200): 
+            product_name = product_metadata["product_name"][counter]
+            product_website_url = product_metadata["product_url"][counter]
+            try : 
+                product_unique_id = uuid.uuid4()
+                response = self.website_request_validator(product_website_url)
+                website_extracted_text = None
+                list_urls , pricing_page ,affiliate_page = [None] * 3 
+                if response : 
+                    list_urls, pricing_page , affiliate_page = self.website_home_page_extractor(response)
+                    website_extracted_text = self.website_text_extractor(response)
+                else: raise BaseException("response not found for " , product_website_url)
+                self.get_website_screenshot(product_website_url,f"screenshots/{product_unique_id}_home.png")
+                website_extracted_text_pricing = "" 
+                if pricing_page:
+                    product_website_pricing_url = product_website_url + pricing_page if "http" not in pricing_page else pricing_page
+                    price_response = self.website_request_validator(product_website_pricing_url)
+                    if price_response: website_extracted_text_pricing = self.website_text_extractor(price_response)
+                    self.get_website_screenshot(product_website_pricing_url,f"screenshots/{product_unique_id}_pricing.png")                    
+                product_content_json = json.loads(self.generate_product_content(website_extracted_text+website_extracted_text_pricing))
+                product_content_json = {key.lower(): value for key, value in product_content_json.items()}
+                # if not self.valid_json(product_content_json): raise NameError(f"The Json file is not valid: \n {sorted(list(product_content_json.keys()))} \n {product_content_json}" )
+                product_content_json["product_name"] = product_name
+                product_content_json["product_id"] = str(product_unique_id)
+                product_content_json["pricing_avialable"] = True if pricing_page else None
+                product_content_json["affiliate_avialable"] = True if affiliate_page else None
+                self.save_product_content(product_content_json,f"json/{product_unique_id}.json")
+                # print(index , product_website_url , len(website_extracted_text) , pricing_page, product_unique_id)
+                print("Retrival Success For Index " , counter)
+            except Exception as e :  
+                print(" >>>>>>>>> Retrival Failed For Index " , counter , e )
+    def valid_json(self,product_content_json):
+        # if not len(list(product_content_json.kes())) : return False
+        if sorted(['categories', 'cons', 'pricing', 'pros', 'rating', 'summary', 'toolfor', 'usecases']) == sorted(list(product_content_json.keys())): return False
+
+    def save_product_content(self,product_content_json,filename):
+        with open(filename,"w") as f: json.dump(product_content_json,f)
+    def process_topai_metadata(self,filename):
+        processed_metadata = {}
+        return pd.read_csv(filename).to_dict()
+    def website_request_validator(self,website_url):
+        try:
+            headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"}   
+            response = requests.get(website_url,headers=headers)
+            if str(response.status_code).startswith("2") : return response
+            else: return None
+        except Exception as e : 
+            print("Error Logged in website_request_validator " , e )
+            return None
+    def website_text_extractor(self,response):
         try: 
-            from selenium import webdriver
-            from selenium.webdriver.chrome.service import Service
-            from selenium.webdriver.common.by import By
+            soup = BeautifulSoup(response.content,'html.parser')
+            return soup.text
+        except Exception as e : 
+            print("Error Logged in website_text_extractor " , e )
+            return None
+    def website_home_page_extractor(self,response):
+        list_urls , pricing_page , affiliate_page = [None]*3
+        soup = BeautifulSoup(response.content,'html.parser')
+        list_links = soup.find_all('a', href=True)
+        list_urls = [link['href'] for link in list_links]
+        for url in list_urls: 
+            if "pricing" in url or "price" in url or "plan" in url : pricing_page = url
+            if "affiliate" in url : affiliate_page = url
+        return list_urls , pricing_page , affiliate_page
+    def get_website_screenshot(self,website_url,filename):
+        try: 
             options = webdriver.ChromeOptions()
             options.add_argument('--headless') 
             options.add_argument('--no-sandbox')
             options.add_argument('--disable-dev-shm-usage')
             driver = webdriver.Chrome(options=options)
             driver.set_window_size(1920, 1080)
-            driver.get(url)
-            driver.implicitly_wait(10)
-            driver.save_screenshot(path)
+            driver.get(website_url)
+            driver.implicitly_wait(20)
+            import time 
+            time.sleep(5)
+            try:
+                alert = Alert(driver)
+                alert.accept()
+                alert.dismiss()
+            except: pass 
+            time.sleep(5)
+            driver.save_screenshot(filename)
             driver.quit()
             return True
         except Exception as e : 
-            raise SystemError(f"Unable to take Screen shot for {url} \n Exception found {e}")
+            raise SystemError(f"Unable to take Screen shot for {website_url} \n Exception found {e}")
+    def generate_product_content(self,extracted_text):
+        import properties
+        import google.generativeai as genai 
+        genai.configure(api_key=properties.gemini_api)
+        model = genai.GenerativeModel('gemini-pro')
+        prompt = f''' This is the text extracted from a website {extracted_text}  
+        \n Give following response in valid json format with keys as summary,categories,pro,cons,usecase,toolfor
+        \n 1. 100 words summary 
+        \n 2. what categoires does the tool falls under give me 5 categories
+        \n 3. 5 pros and 5 cons of this tool in list format
+        \n 4. 5 use cases with explanation for str(each) , the json keys should be case and detail("*.json")s
+        \n 5. who is this tool fit for give me 5 with explanation for each , json keys should be target and details
+        \n 6. Pricing Information
+        \n 7. Rating out of 10 for this product for the information given'''
+        response = model.generate_content(prompt)
+        answer = response.text
+        answer = answer[answer.find("{"):-answer[::-1].find("}")]
+        # import json 
+        return answer
 
-        pass
-pro = Processor()
-# res = pro.get_gemini_reponse()
-# print(res)
+# Product_Meta_Processor()
+
+class Product_Content_Processor:
+    def __init__(self) -> None:
+        json_files_path =  "json/"
+        categorie_json_file = "catergories_json/categories.json"
+        toolfor_json_file = "toolfor_json/toolfor.json"
+        json_files = self.list_json_files(json_files_path)
+        for each_json in json_files: 
+            self.gather_categories(each_json,categorie_json_file)
+            self.gather_toolfor(each_json,toolfor_json_file)
+    def list_json_files(self,json_file_path):
+        json_files = None 
+        json_files = glob.glob(os.path.join(json_file_path, '*.json'))
+        return json_files
+    def gather_categories(self,json_file,categorie_json_file):
+        with open(categorie_json_file,"r") as f : 
+            categorie_json = json.load(f)
+        with open(json_file,"r") as f : 
+            product_content_json = json.load(f)
+        for each_categories in product_content_json["categories"]: 
+            if each_categories not in categorie_json : categorie_json[each_categories] = [product_content_json["product_id"]]
+            else: categorie_json[each_categories].append(product_content_json["product_id"])
+        with open(categorie_json_file,"w") as f : 
+            json.dump(categorie_json,f)
+    def gather_toolfor(self,json_file,toolfor_json_file):
+        with open(toolfor_json_file,"r") as f :
+            toolfor_json = json.load(f)
+        with open(json_file,"r") as f :
+            product_content_json = json.load(f)
+        for each_toolfor in product_content_json["toolfor"]: 
+            if each_toolfor["target"] not in toolfor_json : toolfor_json[each_toolfor["target"]] = [product_content_json["product_id"]]
+            else: toolfor_json[each_toolfor["target"]].append(product_content_json["product_id"])
+        with open(toolfor_json_file,"w") as f : 
+            json.dump(toolfor_json,f)
+        # pass
+
+# Product_Content_Processor()
