@@ -1,3 +1,6 @@
+# TODO 
+#  Save the failed index on a file for later debugging and retieval 
+
 import pandas as pd 
 from selenium import webdriver
 import properties
@@ -29,7 +32,7 @@ class Product_Meta_Processor:
                 if response : 
                     list_urls, pricing_page , affiliate_page = self.website_home_page_extractor(response)
                     website_extracted_text = self.website_text_extractor(response)
-                else: raise BaseException("response not found for " , product_website_url)
+                else: raise BaseException("response not found for " , product_website_url,index)
                 self.get_website_screenshot(product_website_url,f"screenshots/{product_unique_id}_home.png")
                 website_extracted_text_pricing = "" 
                 if pricing_page:
@@ -39,20 +42,16 @@ class Product_Meta_Processor:
                     self.get_website_screenshot(product_website_pricing_url,f"screenshots/{product_unique_id}_pricing.png")                    
                 product_content_json = json.loads(self.generate_product_content(website_extracted_text+website_extracted_text_pricing))
                 product_content_json = {key.lower(): value for key, value in product_content_json.items()}
-                # if not self.valid_json(product_content_json): raise NameError(f"The Json file is not valid: \n {sorted(list(product_content_json.keys()))} \n {product_content_json}" )
                 product_content_json["product_name"] = product_name
-                product_content_json["product_id"] = str(product_unique_id)
-                product_content_json["pricing_avialable"] = True if pricing_page else None
-                product_content_json["affiliate_avialable"] = True if affiliate_page else None
+                product_content_json["product_unique_id"] = str(product_unique_id)
+                product_content_json["product_pricing_available"] = True if pricing_page else None
+                product_content_json["product_affiliate_available"] = True if affiliate_page else None
+                product_content_json["product_url"] = product_website_url
                 self.save_product_content(product_content_json,f"json/{product_unique_id}.json")
                 # print(index , product_website_url , len(website_extracted_text) , pricing_page, product_unique_id)
                 print("Retrival Success For Index " , counter)
             except Exception as e :  
                 print(" >>>>>>>>> Retrival Failed For Index " , counter , e )
-    def valid_json(self,product_content_json):
-        # if not len(list(product_content_json.kes())) : return False
-        if sorted(['categories', 'cons', 'pricing', 'pros', 'rating', 'summary', 'toolfor', 'usecases']) == sorted(list(product_content_json.keys())): return False
-
     def save_product_content(self,product_content_json,filename):
         with open(filename,"w") as f: json.dump(product_content_json,f)
     def process_topai_metadata(self,filename):
@@ -112,7 +111,7 @@ class Product_Meta_Processor:
         genai.configure(api_key=properties.gemini_api)
         model = genai.GenerativeModel('gemini-pro')
         prompt = f''' This is the text extracted from a website {extracted_text}  
-        \n Give following response in valid json format with keys as summary,categories,pro,cons,usecase,toolfor
+        \n Give following response in valid json format with keys as product_summary,product_categories,product_pros,product_cons,product_usecases,product_toolfor,product_pricing,product_rating
         \n 1. 100 words summary 
         \n 2. what categoires does the tool falls under give me 5 categories
         \n 3. 5 pros and 5 cons of this tool in list format
