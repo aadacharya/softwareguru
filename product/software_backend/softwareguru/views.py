@@ -7,6 +7,7 @@ from django.core.serializers import serialize
 import json
 from .serializers import ProductMetaDataSerializer , ProductDataSerializer
 from rest_framework.decorators import api_view
+from rest_framework import response
 
 @ensure_csrf_cookie
 def Set_CSRF_Cookie(request):
@@ -15,12 +16,17 @@ def Set_CSRF_Cookie(request):
 # Create your views here.
 @api_view(['GET'])
 def Get_Product(request):
-    products = ProductData.objects.all()[11:12]
-    serializer = ProductDataSerializer  (products, many=True , context={'request': request})
-    return JsonResponse(serializer.data,safe=False)
+    product_filter = request.GET.get('product_unique_id',None)
+
+    try:
+        products = ProductData.objects.get(product_unique_id=product_filter)
+        serializer = ProductDataSerializer  (products, many=False , context={'request': request})
+        return JsonResponse(serializer.data,safe=False)
+    except: 
+        return JsonResponse({})
 @api_view(['GET'])
 def Get_All_Products(request):
-    products = ProductData.objects.all()[11:12]
+    products = ProductData.objects.all()[0:3]
     serializer = ProductMetaDataSerializer  (products, many=True , context={'request': request})
     return JsonResponse(serializer.data,safe=False)
 def Upload_Product_Data(request): 
