@@ -1,0 +1,50 @@
+.productmain{
+    padding: 2rem;
+}
+.productinnermain{
+    background: rgba(177, 148, 239, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Apply the blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: border to enhance the glassy effect */
+    padding: 20px; /* Optional: add some padding inside the div */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow for depth */
+}
+.productinnermain .producthead{
+    display: flex;
+    flex-direction: row;
+}
+.producthead .productimage{
+    padding: 1rem;
+    border: solid 2px white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.producthead .productbody{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.productbody .productname{
+    font-size: xx-large;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    /* flex: start; */
+}
+
+.productbody .productabout{
+    padding-bottom: 2rem;
+
+}
+.productbody .productcategory{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    font-weight: bold;
+    color: blueviolet;
+
+}
