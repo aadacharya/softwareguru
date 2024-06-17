@@ -21,7 +21,7 @@ class Product_Meta_Processor:
         product_metadata = self.process_topai_metadata(self.product_topai_metadata_file)
         self.runner(product_metadata)
     def runner(self,product_metadata):
-        index = 0 
+        index = 23 
         for counter in range(index,index+50): 
             product_name = product_metadata["product_name"][counter]
             product_website_url = product_metadata["product_url"][counter]
@@ -34,7 +34,9 @@ class Product_Meta_Processor:
                 if response : 
                     list_urls, pricing_page , affiliate_page = self.website_home_page_extractor(response)
                     website_extracted_text = self.website_text_extractor(response)
-                else: raise BaseException("response not found for " , product_website_url,index)
+                else: 
+                    print ("response not found for " , product_website_url,index)
+                    assert False
                 if self.get_website_screenshot(product_website_url,f"screenshots/{product_unique_id}_home.png"):
                     image_paths.append(f"screenshots/{product_unique_id}_home.png")
                 website_extracted_text_pricing = "" 
