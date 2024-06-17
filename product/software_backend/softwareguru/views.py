@@ -3,15 +3,26 @@ from django.http import JsonResponse
 from .forms import ProductDataForm , ProductImageFormSet
 from .models import ProductData , ProductImage
 from django.views.decorators.csrf import ensure_csrf_cookie
+from django.core.serializers import serialize
 import json
+from .serializers import ProductMetaDataSerializer , ProductDataSerializer
+from rest_framework.decorators import api_view
 
 @ensure_csrf_cookie
 def Set_CSRF_Cookie(request):
     return JsonResponse({})
 
 # Create your views here.
+@api_view(['GET'])
+def Get_Product(request):
+    products = ProductData.objects.all()[11:12]
+    serializer = ProductDataSerializer  (products, many=True , context={'request': request})
+    return JsonResponse(serializer.data,safe=False)
+@api_view(['GET'])
 def Get_All_Products(request):
-    return JsonResponse({})
+    products = ProductData.objects.all()[11:12]
+    serializer = ProductMetaDataSerializer  (products, many=True , context={'request': request})
+    return JsonResponse(serializer.data,safe=False)
 def Upload_Product_Data(request): 
     if request.method == 'POST':
         product_form = ProductDataForm(request.POST)
