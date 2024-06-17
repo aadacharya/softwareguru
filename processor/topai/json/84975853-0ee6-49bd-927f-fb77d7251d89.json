@@ -1,0 +1,75 @@
+{
+  "product_summary": "Inven is an AI-powered company discovery platform that makes it easy to find and connect with companies that are a good fit for your M&A or investment banking needs. With Inven, you can quickly and easily identify potential targets, buyers, or partners, and get the insights you need to make informed decisions. Inven's database of over 23 million companies and 430 million contacts gives you access to a wealth of information that you can use to power your deal sourcing and execution efforts.",
+  "product_categories": [
+    "M&A",
+    "Investment Banking",
+    "Business Brokerage",
+    "Consulting",
+    "Corporate Development"
+  ],
+  "product_pros": [
+    "Find companies 10x faster with AI",
+    "Identify the best middle market opportunities",
+    "Get a market overview quickly",
+    "Connect with the owners",
+    "Get access to the world's leading contact data"
+  ],
+  "product_cons": [
+    "Can be expensive",
+    "May not be as comprehensive as some other databases",
+    "Can be difficult to learn how to use",
+    "May not be suitable for all industries",
+    "May not be able to find all the information you need"
+  ],
+  "product_usecases": [
+    {
+      "case": "Identifying acquisition targets",
+      "details": "Inven can help you identify potential acquisition targets that are a good fit for your strategic objectives. You can use Inven to search for companies by industry, size, location, and other criteria."
+    },
+    {
+      "case": "Finding buyers for your business",
+      "details": "Inven can help you find potential buyers for your business. You can use Inven to search for buyers by industry, size, location, and other criteria."
+    },
+    {
+      "case": "Identifying potential partners",
+      "details": "Inven can help you identify potential partners for your business. You can use Inven to search for partners by industry, size, location, and other criteria."
+    },
+    {
+      "case": "Getting a market overview",
+      "details": "Inven can help you get a market overview of any industry. You can use Inven to search for companies by industry, size, location, and other criteria."
+    },
+    {
+      "case": "Finding contact information for key executives",
+      "details": "Inven can help you find contact information for key executives at any company. You can use Inven to search for executives by name, title, company, and other criteria."
+    }
+  ],
+  "product_toolfor": [
+    {
+      "target": "M&A professionals",
+      "details": "Inven is a valuable tool for M&A professionals who need to quickly and easily identify potential targets, buyers, or partners."
+    },
+    {
+      "target": "Investment bankers",
+      "details": "Inven is a valuable tool for investment bankers who need to quickly and easily identify potential deals."
+    },
+    {
+      "target": "Business brokers",
+      "details": "Inven is a valuable tool for business brokers who need to quickly and easily identify potential buyers and sellers."
+    },
+    {
+      "target": "Consultants",
+      "details": "Inven is a valuable tool for consultants who need to quickly and easily get a market overview of any industry."
+    },
+    {
+      "target": "Corporate development professionals",
+      "details": "Inven is a valuable tool for corporate development professionals who need to quickly and easily identify potential acquisition targets or partners."
+    }
+  ],
+  "product_pricing": "Inven offers a variety of pricing plans to fit your needs. Contact Inven for more information.",
+  "product_rating": 9,
+  "product_name": "Inven",
+  "product_unique_id": "84975853-0ee6-49bd-927f-fb77d7251d89",
+  "product_pricing_available": null,
+  "product_affiliate_available": null,
+  "product_url": "https://inven.ai"
+}

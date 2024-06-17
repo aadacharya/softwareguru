@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import JsonResponse
-from .forms import ProuctDataForm
+from .forms import ProductDataForm , ProductImageFormSet
+from .models import ProductData , ProductImage
 from django.views.decorators.csrf import ensure_csrf_cookie
 import json
 
@@ -13,18 +14,27 @@ def Get_All_Products(request):
     return JsonResponse({})
 def Upload_Product_Data(request): 
     if request.method == 'POST':
-        # data = json.loads(request.body.decode('utf-8'))
-        # print(data.keys())
-        try:
-            data = json.loads(request.body.decode('utf-8'))
-        except json.JSONDecodeError:
-            return JsonResponse({'status': 'error', 'message': 'Invalid JSON'}, status=400)
-        form = ProuctDataForm(data)
-        if form.is_valid():
-            product = form.save()
-            return JsonResponse({'status':'success','product_name':product.product_name,'product_unique_id':product.product_unique_id})
+        product_form = ProductDataForm(request.POST)
+        image_formset = ProductImageFormSet(request.POST, request.FILES, queryset=ProductImage.objects.none())
+
+        if product_form.is_valid() and image_formset.is_valid():
+            product = product_form.save()
+            for form in image_formset.cleaned_data:
+                if form:
+                    image = form['image']
+                    caption = form.get('caption', '')
+                    ProductImage.objects.create(product=product, image=image, caption=caption)
+            return JsonResponse({'status': 'success', 'product_id': product.id}, status=201)
         else:
-            return JsonResponse({'status':'error','errors':form.errors})    
+            # Print errors for debugging
+            print("Product Form Errors:", product_form.errors)
+            for form in image_formset.forms:
+                print("Image Form Errors:", form.errors)
+            errors = {
+                'product_form_errors': product_form.errors,
+                'image_formset_errors': [form.errors for form in image_formset.forms]
+            }
+            return JsonResponse({'status': 'error', 'errors': errors}, status=400)
 def Delete_Product_Data(request):
     pass
 def Upload_Product_Image(request):

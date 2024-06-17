@@ -14,6 +14,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.alert import Alert
 import uuid
 import glob
+from backend import Product_Data
 class Product_Meta_Processor: 
     def __init__(self) -> None:
         self.product_topai_metadata_file = "Unique_Product_Meta.csv"
@@ -21,9 +22,10 @@ class Product_Meta_Processor:
         self.runner(product_metadata)
     def runner(self,product_metadata):
         index = 0 
-        for counter in range(index,index+200): 
+        for counter in range(index,index+1): 
             product_name = product_metadata["product_name"][counter]
             product_website_url = product_metadata["product_url"][counter]
+            image_paths = []
             try : 
                 product_unique_id = uuid.uuid4()
                 response = self.website_request_validator(product_website_url)
@@ -33,13 +35,15 @@ class Product_Meta_Processor:
                     list_urls, pricing_page , affiliate_page = self.website_home_page_extractor(response)
                     website_extracted_text = self.website_text_extractor(response)
                 else: raise BaseException("response not found for " , product_website_url,index)
-                self.get_website_screenshot(product_website_url,f"screenshots/{product_unique_id}_home.png")
+                if self.get_website_screenshot(product_website_url,f"screenshots/{product_unique_id}_home.png"):
+                    image_paths.append(f"screenshots/{product_unique_id}_home.png")
                 website_extracted_text_pricing = "" 
                 if pricing_page:
                     product_website_pricing_url = product_website_url + pricing_page if "http" not in pricing_page else pricing_page
                     price_response = self.website_request_validator(product_website_pricing_url)
                     if price_response: website_extracted_text_pricing = self.website_text_extractor(price_response)
-                    self.get_website_screenshot(product_website_pricing_url,f"screenshots/{product_unique_id}_pricing.png")                    
+                    if self.get_website_screenshot(product_website_pricing_url,f"screenshots/{product_unique_id}_pricing.png"):
+                        image_paths.append(f"screenshots/{product_unique_id}_pricing.png")
                 product_content_json = json.loads(self.generate_product_content(website_extracted_text+website_extracted_text_pricing))
                 product_content_json = {key.lower(): value for key, value in product_content_json.items()}
                 product_content_json["product_name"] = product_name
@@ -50,6 +54,7 @@ class Product_Meta_Processor:
                 self.save_product_content(product_content_json,f"json/{product_unique_id}.json")
                 # print(index , product_website_url , len(website_extracted_text) , pricing_page, product_unique_id)
                 print("Retrival Success For Index " , counter)
+                Product_Data().post_product_data(f"json/{product_unique_id}.json",image_paths)
             except Exception as e :  
                 print(" >>>>>>>>> Retrival Failed For Index " , counter , e )
     def save_product_content(self,product_content_json,filename):
@@ -103,8 +108,9 @@ class Product_Meta_Processor:
             driver.save_screenshot(filename)
             driver.quit()
             return True
-        except Exception as e : 
-            raise SystemError(f"Unable to take Screen shot for {website_url} \n Exception found {e}")
+        except Exception as e :
+            print(f"Unable to take Screen shot for {website_url} \n Exception found {e}")
+            return False 
     def generate_product_content(self,extracted_text):
         import properties
         import google.generativeai as genai 
@@ -115,7 +121,7 @@ class Product_Meta_Processor:
         \n 1. 100 words summary 
         \n 2. what categoires does the tool falls under give me 5 categories
         \n 3. 5 pros and 5 cons of this tool in list format
-        \n 4. 5 use cases with explanation for str(each) , the json keys should be case and detail("*.json")s
+        \n 4. 5 use cases with explanation for each, the json keys should be case and details
         \n 5. who is this tool fit for give me 5 with explanation for each , json keys should be target and details
         \n 6. Pricing Information
         \n 7. Rating out of 10 for this product for the information given'''
@@ -163,3 +169,8 @@ class Product_Content_Processor:
         # pass
 
 # Product_Content_Processor()
+
+# import pandas as pd
+# df = pd.read_csv("Unique_Product_Meta.csv")
+# df["product_url"] = df["product_url"].str.replace('/?via=topaitools','')
+# df.to_csv("Unique_Product_Meta.csv")
