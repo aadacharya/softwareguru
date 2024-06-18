@@ -21,8 +21,8 @@ class Product_Meta_Processor:
         product_metadata = self.process_topai_metadata(self.product_topai_metadata_file)
         self.runner(product_metadata)
     def runner(self,product_metadata):
-        index = 33 
-        for counter in range(index,index+50): 
+        index = 83 
+        for counter in range(index,index+500): 
             product_name = product_metadata["product_name"][counter]
             product_website_url = product_metadata["product_url"][counter]
             image_paths = []
