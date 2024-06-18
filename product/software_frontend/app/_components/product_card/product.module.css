@@ -1,5 +1,8 @@
 .productmain{
     padding: 2rem;
+    /* width: 70%; */
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 .productinnermain{
     background: rgba(177, 148, 239, 0.1); /* Semi-transparent background */
@@ -15,17 +18,20 @@
     flex-direction: row;
 }
 .producthead .productimage{
-    padding: 1rem;
-    border: solid 2px white;
+    /* padding: 1rem; */
+    /* border: solid 2px white; */
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 40%;
+
 }
 .producthead .productbody{
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    width: 70%;
     /* justify-content: space-between; */
 }
 .productbody .productname{

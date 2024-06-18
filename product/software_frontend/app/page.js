@@ -10,9 +10,8 @@ export default function Home() {
   return (
     <div className={styles.homemain}>
       <Header/>
-      <Product_Card/>
       <Product_Page product_unique_id={'feb414be-9d96-4ded-8377-49dfa8ccaa57'}/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }

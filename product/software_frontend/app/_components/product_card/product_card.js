@@ -4,22 +4,22 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 
-const Product_Card = () => {
+const Product_Card = ({product_data}) => {
+  // console.log("******** " , product_data["images"][0]["image"])
   return (
     <div className={styles.productmain}>
     <div className={styles.productinnermain}>
         <div className={styles["producthead"]}>
             <div className={styles["productimage"]}>
-                <Image width={200} height={200} alt='Logo' src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_9e8e86037198aef6f46b0cfb68bf9b30/kbuilding.jpeg"/>
+                <Image width={2000} height={2000} alt='Logo' src={product_data["images"][0]["image"]}/>
             </div>
             <div className={styles["productbody"]}>
-                <div className={styles["productname"]}>Human Interest 401(k)</div>
-                <div className={styles["productabout"]}>Human Interest makes it easy to offer a 401(k). With automated administration and built-in investment advising, we make it affordable to help your employees plan for their futures.</div>
+                  <div className={styles["productname"]}>{product_data["product_name"]}</div>
+                <div className={styles["productabout"]}>{product_data["product_summary"]}</div>
                 <div className={styles["productcategory"]}>
-                <div><li>Other Infor Resellers</li></div>
-                <div>Infor EAM Resellers</div>
-                <div>Infor Consulting Services</div>
-                <div></div>
+                {product_data["product_categories"].map((items) => (
+                  <div key="category"> {items} </div>
+                ))}
                 </div>
             </div>
         </div>

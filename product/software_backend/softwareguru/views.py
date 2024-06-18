@@ -8,6 +8,7 @@ import json
 from .serializers import ProductMetaDataSerializer , ProductDataSerializer
 from rest_framework.decorators import api_view
 from rest_framework import response
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 @ensure_csrf_cookie
 def Set_CSRF_Cookie(request):
@@ -17,7 +18,6 @@ def Set_CSRF_Cookie(request):
 @api_view(['GET'])
 def Get_Product(request):
     product_filter = request.GET.get('product_unique_id',None)
-
     try:
         products = ProductData.objects.get(product_unique_id=product_filter)
         serializer = ProductDataSerializer  (products, many=False , context={'request': request})
@@ -26,8 +26,16 @@ def Get_Product(request):
         return JsonResponse({})
 @api_view(['GET'])
 def Get_All_Products(request):
-    products = ProductData.objects.all()[0:3]
-    serializer = ProductMetaDataSerializer  (products, many=True , context={'request': request})
+    products = ProductData.objects.all()[0:]
+    paginator = Paginator(products, 30)  # Show 10 objects per page
+    page_number = request.GET.get('page') if request.GET.get('page') else 1
+    try:
+        product_page_objects = paginator.page(page_number)
+    except PageNotAnInteger:
+        product_page_objects = paginator.page(1)
+    except EmptyPage:
+        product_page_objects = paginator.page(paginator.num_pages)
+    serializer = ProductMetaDataSerializer  (product_page_objects, many=True , context={'request': request})
     return JsonResponse(serializer.data,safe=False)
 def Upload_Product_Data(request): 
     if request.method == 'POST':
