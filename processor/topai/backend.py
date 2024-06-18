@@ -32,9 +32,11 @@ class Product_Data():
         ]
         response = session.post(url, data=product_json_data, files=files,headers=headers)
         print ("Response for product data post",response.text)
+        response_json = response.json()
         for _, file in files:
             if isinstance(file, tuple) and hasattr(file[1], 'close'):
                 file[1].close()
+        return False if response_json["status"] == "error" else True
     def delete_product_data(self):
         pass
 

@@ -21,7 +21,7 @@ class Product_Meta_Processor:
         product_metadata = self.process_topai_metadata(self.product_topai_metadata_file)
         self.runner(product_metadata)
     def runner(self,product_metadata):
-        index = 23 
+        index = 33 
         for counter in range(index,index+50): 
             product_name = product_metadata["product_name"][counter]
             product_website_url = product_metadata["product_url"][counter]
@@ -56,7 +56,8 @@ class Product_Meta_Processor:
                 self.save_product_content(product_content_json,f"json/{product_unique_id}.json")
                 # print(index , product_website_url , len(website_extracted_text) , pricing_page, product_unique_id)
                 print("Retrival Success For Index " , counter)
-                Product_Data().post_product_data(f"json/{product_unique_id}.json",image_paths)
+                status = Product_Data().post_product_data(f"json/{product_unique_id}.json",image_paths)
+                if not status: assert False
             except Exception as e :  
                 print(" >>>>>>>>> Retrival Failed For Index " , counter , e )
                 # import json
