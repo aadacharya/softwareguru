@@ -26,8 +26,8 @@ def Get_Product(request):
         return JsonResponse({})
 @api_view(['GET'])
 def Get_All_Products(request):
-    products = ProductData.objects.all()[0:]
-    paginator = Paginator(products, 30)  # Show 10 objects per page
+    products = ProductData.objects.all()
+    paginator = Paginator(products, 15)  # Show 10 objects per page
     page_number = request.GET.get('page') if request.GET.get('page') else 1
     try:
         product_page_objects = paginator.page(page_number)
