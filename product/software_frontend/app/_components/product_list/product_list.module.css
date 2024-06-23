@@ -1,0 +1,8 @@
+.productListMain {
+    background-color: #070125;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}

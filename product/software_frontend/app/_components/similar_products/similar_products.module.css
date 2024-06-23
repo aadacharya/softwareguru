@@ -1,0 +1,13 @@
+.similarProductMain{
+    display: flex;
+    flex-direction: column;
+}
+.similarProductMain h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.similarProductList {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,184 @@
+.productPageCardMain{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 4rem;
+}
+.productPageCardMain .productPageCardHead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productPageCardHead .productPageCardHeadList{
+    display: flex;
+    flex-direction: row;
+}
+
+.productPageCardHeadList .productPageCardHeadName{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    margin-right: 1rem;
+
+} 
+.productPageCardMain .productPageCardHeadCategories{
+    display: flex;
+    flex-direction: row;
+}
+.productPageCardHeadCategories .productPageCardHeadCategory{
+    border: 0.5px solid rgba(80, 80, 234, 1);
+    background: rgba(80, 80, 234, 0.4);
+    border-radius: 40px;
+    padding: 0.5rem 0.5rem ;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    margin-right: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 20%;
+    font-weight: bold;
+}
+
+.productPageCardHead .productPageCardHeadRating{
+    display: flex;
+    flex-direction: row;
+}
+.productPageCardHeadRating img{
+    margin-right: 1rem;
+}
+
+.productPageCardMain .productPageCardImage{
+    overflow: hidden;
+    padding:  1rem 0 0 0 ;
+    border: 8px;
+    margin-bottom: 1rem;
+}
+
+.productPageCardImage img{
+    border-radius: 8px;
+    width: 100%;
+}
+
+.productPageCardMain .productPageCardProCon{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    /* background-color: white; */
+}
+
+.productPageCardProCon .productPageCardPros {
+    width: 50%;
+}
+
+.productPageCardProCon .productPageCardCons {
+    width: 50%;
+}
+.productPageCardProCon .productPageCardCons li{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+
+}
+
+.productPageCardProCon .productPageCardCons h1{
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.productPageCardProCon .productPageCardPros h1{
+    font-size: 18px;
+    font-weight: 600;
+}
+.productPageCardProCon .productPageCardPros li{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    font-size: 14px;
+    font-weight: 400;   
+    text-align: left;
+}
+.productPageCardMain .productPageCardDescription {
+    margin-top: 1rem;
+    
+}
+.productPageCardMain .productPageCardDescription h1{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: justify;
+    
+}
+
+.productPageCardMain .productPageCardDescription h2{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+
+
+}
+
+
+.productPageCardMain .productPageCardUseCase {
+    margin-top: 1rem;
+}
+.productPageCardMain .productPageCardUseCase h1{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+}
+.productPageCardMain .productPageCardUseCase div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.25rem;
+    
+}
+.productPageCardMain .productPageCardUseCase li{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+.productPageCardMain .productPageCardUseCase h2{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
+
+.productPageCardMain .productPageCardToolFor {
+    margin-top: 1rem;
+}
+.productPageCardMain .productPageCardToolFor h1{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+}
+.productPageCardMain .productPageCardToolFor div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.25rem;
+    
+}
+.productPageCardMain .productPageCardToolFor li{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+.productPageCardMain .productPageCardToolFor h2{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}

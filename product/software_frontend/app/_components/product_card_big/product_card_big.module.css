@@ -1,0 +1,106 @@
+.productCardMain {
+    background: rgba(7, 1, 37, 1);
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 24px 1px rgba(255, 255, 255, 0.15);
+    box-shadow: 4px 0px 24px 1px rgba(255, 255, 255, 0.2);
+    height: 454px;
+    border-radius: 40px;
+    padding: 1rem;
+    margin: 2rem;
+    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.productCardMain .productHead{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 1rem; */
+}
+
+.productHead .productRating{
+    display: flex;
+    flex-direction: row;
+}
+
+.productHead .productName{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.productName .name{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.productName .productLink{
+    width: 24px;
+    height: 24px;
+    margin-left: 24px;
+    /* padding: 0px 0px 0px 0px; */
+}
+.productCardMain .productImage{
+    overflow: hidden;
+    border-radius: 8px;
+    /* margin-top: 1rem; */
+    margin-bottom: 1rem;
+
+}
+.productImage img{
+    border-radius: 8px;
+    /* width: 707px; */
+    /* width: 100%; */
+    /* height: 397px; */
+    /* transition: transform 0.5s ease;  */
+    /* transform: scale(0.8); */
+    
+
+}
+
+.productCardMain .productAbout{
+    /* font-family: Lato; */
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+
+}
+
+.productCardMain .productTail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.productTail .productCategoires {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    
+    /* justify-content: ; */
+
+}
+
+.productCategoires .productCategory{
+    border: 0.5px solid rgba(80, 80, 234, 1);
+    background: rgba(80, 80, 234, 0.4);
+    border-radius: 40px;
+    padding: 0.25rem 0.5rem ;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    margin-right: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 20%;
+}
