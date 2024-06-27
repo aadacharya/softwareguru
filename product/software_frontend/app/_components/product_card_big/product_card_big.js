@@ -14,8 +14,8 @@ const ProductCardBig = ({product_data}) => {
               <Link href={product_data["product_url"]}>
                 <Image
                   src="/external_link.svg"
-                  width={100}
-                  height={100}
+                  width={24}
+                  height={24}
                   alt="Website"
                 />
               </Link>

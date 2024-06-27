@@ -7,10 +7,10 @@ const Header = () => {
   return (
     <div className={styles.headerMain}>
         <div className={styles["headerLogo"]}> 
-        <Image src ="./vercel.svg" width={100} height={100} alt="Logo"></Image>
+        <Image src ="./logo.svg" width={200} height={200} alt="Logo"></Image>
         </div>
         <div className={styles["headerComponent"]}> 
-        <div className={styles["headerComponentEach"]}> Products </div>
+        <div className={styles["headerComponentEach"]}> <Link href='/'>Products</Link> </div>
         <div className={styles["headerComponentEach"]}> Categories </div>
         <div className={styles["headerComponentEach"]}> Blogs </div>
     </div>

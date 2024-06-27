@@ -6,7 +6,7 @@ import styles from "./product_page.module.css"
 import ProductPage from "../_components/product_page/poduct_page";
 
 
-export default function Home({ params}) {
+export default function Home({params}) {
     // console.log("Here is")
     // console.log(params.product_page)
   return (

@@ -30,7 +30,8 @@
 }
 .productPageCardHeadCategories .productPageCardHeadCategory{
     border: 0.5px solid rgba(80, 80, 234, 1);
-    background: rgba(80, 80, 234, 0.4);
+    /* background: rgba(80, 80, 234, 0.4); */
+    background: rgba(80, 80, 234, 1);
     border-radius: 40px;
     padding: 0.5rem 0.5rem ;
     font-size: 12px;
@@ -50,6 +51,8 @@
 }
 .productPageCardHeadRating img{
     margin-right: 1rem;
+    width: 18px;
+    height: 18px;
 }
 
 .productPageCardMain .productPageCardImage{
