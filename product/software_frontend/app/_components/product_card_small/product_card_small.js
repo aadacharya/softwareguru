@@ -21,7 +21,7 @@ const ProductCardSmall = ({product_data}) => {
           {/* <div className={styles["productCategory"]}>Data Analytics</div> */}
         </div>
         <div className={styles["productFeatured"]}>
-          <Image src="/featured.svg" width={70} height={70} alt="Featured" />
+        { product_data["product_featured"] && (<Image src="/featured.svg" width={70} height={70} alt="Featured" />)}
         </div>
       </div>
     </div>

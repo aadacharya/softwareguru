@@ -1,6 +1,10 @@
 .similarProductMain{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    /* left: 0; */
+    padding: 0.5rem;
+    /* width: 100%; */
 }
 .similarProductMain h1{
     font-size: 24px;
@@ -10,4 +14,14 @@
 .similarProductList {
     display: flex;
     flex-direction: row;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.similarProductList .similarProduct{
+    width: 400px;
+    height: auto;
+    padding:  0 0 1rem 1rem ;
 }
