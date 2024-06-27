@@ -5,7 +5,7 @@ import styles from './featured_product.module.css'
 import ProductCardSmall from '../product_card_small/product_card_small'
 
 const FeaturedProduct = async () => {
-  const res = await fetch('http://127.0.0.1:8000/softwareguru/get_products?page=1');
+  const res = await fetch('http://127.0.0.1:8000/softwareguru/get_featured_products?page=1',{cache: 'no-store'});
     if (!res.ok) {
       console.error('Failed to fetch data:', res.statusText);
       return <div>Error: Failed to fetch data</div>;

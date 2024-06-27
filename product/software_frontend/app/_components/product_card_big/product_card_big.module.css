@@ -107,5 +107,8 @@
 }
 
 .productCategoires .productCategory:hover{
-    background: rgba(80, 80, 234, 1);
+    background: rgba(80, 80, 234, 0.8);
+    font-weight: 555;
+    max-width: 30%;
+    cursor: pointer;
 }

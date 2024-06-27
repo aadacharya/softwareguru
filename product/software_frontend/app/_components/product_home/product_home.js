@@ -8,7 +8,7 @@ const ProdcutHome = () => {
   return (
     <div className={styles.productHomeMain}>
         <SearchBar/>
-        <h1>Find the top tools from <span>20000</span> products to boost your productivity by 10x in our platform. </h1>
+        <h1>Find the AI tools you need from <span>20000</span> products to boost your productivity by 10x. </h1>
         <div className={styles.productHomeList}>
           <ProductList page_numer={2}/>
           <FeaturedProduct/>

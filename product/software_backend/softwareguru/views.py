@@ -16,6 +16,21 @@ def Set_CSRF_Cookie(request):
 
 # Create your views here.
 @api_view(['GET'])
+def Get_Feature_Products(request):
+    products = ProductData.objects.filter(product_featured=True)
+    paginator = Paginator(products, 20)  # Show 10 objects per page
+    page_number = request.GET.get('page') if request.GET.get('page') else 1
+    try:
+        product_page_objects = paginator.page(page_number)
+    except PageNotAnInteger:
+        product_page_objects = paginator.page(1)
+    except EmptyPage:
+        product_page_objects = paginator.page(paginator.num_pages)
+    serializer = ProductMetaDataSerializer  (product_page_objects, many=True , context={'request': request})
+    return JsonResponse(serializer.data,safe=False)
+
+
+@api_view(['GET'])
 def Get_Product(request):
     product_filter = request.GET.get('product_unique_id',None)
     try:

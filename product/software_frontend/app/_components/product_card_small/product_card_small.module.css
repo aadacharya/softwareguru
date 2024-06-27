@@ -80,6 +80,15 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     max-width: 90%;
+    padding: 0.25rem 0.5rem ;
+
+}
+
+.productCategories .productCategory:hover{
+    background: rgba(80, 80, 234, 0.8);
+    font-weight: 555;
+    max-width: 70%;
+    cursor: pointer;
 }
 
 .productImage .productFeatured img{

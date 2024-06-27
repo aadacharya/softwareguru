@@ -13,7 +13,7 @@ export default function Home() {
       <Header/>
       <ProdcutHome/>
       <Footer/>
-      <PopUp popupText="You can provide prompt like “I need an AI-based communication tool that would efficiently manage my sales calls.” "/>
+      <PopUp popupText="You can provide prompts like “I need an AI-based communication tool that would efficiently manage my sales calls.” "/>
 
     </div>
       );
