@@ -48,6 +48,36 @@ def Get_All_Products(request):
         product_page_objects, many=True, context={"request": request}
     )
     return JsonResponse(serializer.data, safe=False)
+@api_view(["GET"])
+def Get_Featured_Products(request):
+    products = ProductData.objects.filter(product_featured = True)
+    paginator = Paginator(products, 20)  # Show 10 objects per page
+    page_number = request.GET.get("page") if request.GET.get("page") else 1
+    try:
+        product_page_objects = paginator.page(page_number)
+    except PageNotAnInteger:
+        product_page_objects = paginator.page(1)
+    except EmptyPage:
+        product_page_objects = paginator.page(paginator.num_pages)
+    serializer = ProductMetaDataSerializer(
+        product_page_objects, many=True, context={"request": request}
+    )
+    return JsonResponse(serializer.data, safe=False)
+@api_view(["GET"])
+def Get_Similar_Products(request):
+    products = ProductData.objects.all()
+    paginator = Paginator(products, 3)  # Show 10 objects per page
+    page_number = request.GET.get("page") if request.GET.get("page") else 1
+    try:
+        product_page_objects = paginator.page(page_number)
+    except PageNotAnInteger:
+        product_page_objects = paginator.page(1)
+    except EmptyPage:
+        product_page_objects = paginator.page(paginator.num_pages)
+    serializer = ProductMetaDataSerializer(
+        product_page_objects, many=True, context={"request": request}
+    )
+    return JsonResponse(serializer.data, safe=False)
 
 
 def Upload_Product_Data(request):

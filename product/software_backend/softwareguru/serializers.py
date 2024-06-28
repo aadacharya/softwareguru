@@ -23,21 +23,9 @@ class ProductMetaDataSerializer(serializers.ModelSerializer):
             "product_name",
             "product_unique_id",
             "product_url",
+            "product_featured",
             "images",
         ]
-
-    # def get_images(self,obj):
-    #     request = self.context.get('request')
-    #     substring = request.query_params.get('image_contains', 'home')
-    #     images = obj.images.filter(image__icontains=substring)
-    #     # return ProductImageSerializer(images, many=True).data
-    #     return [
-    #         {
-    #             'image': request.build_absolute_uri(image.image.url)
-    #         }
-    #         for image in images
-    #     ]
-
 
 class ProductDataSerializer(serializers.ModelSerializer):
     images = ProductImageSerializer(many=True, read_only=True)
@@ -58,6 +46,7 @@ class ProductDataSerializer(serializers.ModelSerializer):
             "product_unique_id",
             "product_pricing_available",
             "product_affiliate_available",
+            "product_featured",
             "product_url",
             "images",
         ]
