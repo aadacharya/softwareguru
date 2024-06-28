@@ -63,13 +63,16 @@ def get_categories_from_prompt(user_prompt):
         return []
 
 
-def cache_search_data(search_id, data):
+def cache_search_data(
+    search_id, data, ttl=43200
+):  # cache gets stored for 12 hours in this ttl
     """
-    Cache search data by search_id.
+    Cache search data by search_id with a TTL (Time To Live).
 
     Args:
     - search_id (str): The unique identifier for the search.
     - data (dict): The search data to cache.
+    - ttl (int): Time to live in seconds. Default is 12 hours (43200 seconds).
 
     Returns:
     - bool: True if the operation was successful, False otherwise.
@@ -77,8 +80,8 @@ def cache_search_data(search_id, data):
     try:
         # Convert the data to a JSON string
         json_data = json.dumps(data)
-        # Store the data in Redis with the search_id as the key
-        r.set(search_id, json_data)
+        # Store the data in Redis with the search_id as the key and set TTL
+        r.setex(search_id, ttl, json_data)
         return True
     except Exception as e:
         print(f"Error caching search data: {e}")
