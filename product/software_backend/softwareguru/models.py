@@ -16,6 +16,7 @@ class ProductData(models.Model):
     product_unique_id = models.CharField(max_length=36)
     product_pricing_available = models.BooleanField(default=False)
     product_affiliate_available = models.BooleanField(default=False)
+    product_featured = models.BooleanField(default=False)
     product_url = models.URLField(max_length=200)
 
 
