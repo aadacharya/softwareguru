@@ -42,7 +42,11 @@ const ProductCardBig = ({product_data}) => {
         <div className={styles["productTail"]}>
           <div className={styles["productCategoires"]}>
           {product_data["product_categories"].map((items) => (
-              <div key={items} className={styles["productCategory"]}> {items}</div>
+            <div key={items} className={styles["productCategory"]}> 
+              <Link href={{ pathname: '/product_home', query: { categories_list: [items] } }}>
+                {items}
+              </Link>
+                </div>
                   ))}
           </div>
           <div className={styles["productFeatured"]}>

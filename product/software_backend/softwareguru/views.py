@@ -113,23 +113,16 @@ def Upload_Product_Data(request):
 
 def upload_category_data(request):
     if request.method == "POST":
-
         product_data = ProductData.objects.all()
-
         for product in product_data:
+            print("------> Updating for product " , product.product_name)
             category_list = product.product_categories
             uuid = product.product_unique_id
-
             for category in category_list:
-                # print("category", type(category), category, category.lower())
                 category = category.lower()
-                # print("category", type(category), category)
-
-                # check if exists or not based on category_name
                 category_item = CategoryData.objects.filter(
                     category_name=category
                 ).first()
-
                 if not category_item:
                     new_category_item = CategoryData.objects.create(
                         category_name=category, product_uuid_list=[uuid]
@@ -137,8 +130,6 @@ def upload_category_data(request):
                 else:
                     category_item.product_uuid_list.append(uuid)
                     category_item.save()
-            break
-
     return JsonResponse({"success": True})
 
 
@@ -155,48 +146,35 @@ def Delete_Product_Image(request):
 
 
 def Search_Products(request):
+    # print("-------> In search function")
 
     def search_function(category):
-        # TODO tst this
-        categories = CategoryData.objects.filter("category_name".contains("category"))
-        print("categories", categories)
-
+        categories = CategoryData.objects.filter(category_name__contains=category)
+        print("-----> inside search function " , category , len(categories))
+        # print("categories", categories)
         product_unique_id_list = []
-        # categories_filtered =
-        for i in categories:
-            product_unique_id_list.extend(i.product_uuid_list)
-
-        # [category.product_uuid_list for category in categories]
-
-        # TODO tst this
+        for each_catergory in categories:
+            product_unique_id_list.extend(each_catergory.product_uuid_list)
         product_data = ProductData.objects.filter(
-            "product_unique_id" in product_unique_id_list
+            product_unique_id__in=product_unique_id_list
         )
         return product_data
-
     prompt = request.GET.get("prompt", None)
-    categories_list = request.GET.get("categories_list", None)
+    categories_list = (request.GET.get("categories_list", None).lower()).split(",")
     search_id = request.GET.get("search_id", None)
     sort_by = request.GET.get("sort_by", None)
     limit = request.GET.get("limit", 10)
     offset = request.GET.get("offset", 1)
-
-    # order
-    # 3. search_id
-    # 1. prompt
-    # 2. categories in list
-    # 4. sort_by
-
+    
     product_data = []
-    # return None
-
     if search_id:
         # Redis Logic
         product_data = None
         return
     elif categories_list:
-        for each_category in categories:
-            search_categories = [each_category].extend(each_category.split(" "))
+        for each_category in categories_list:
+            search_categories = [each_category] + each_category.split(" ")
+            # print("-------> In search function Categories Found" , search_categories)
             for category in search_categories:
                 product_data.extend(search_function(category))
                 product_data = list(set(product_data))
@@ -207,12 +185,13 @@ def Search_Products(request):
             for category in search_categories:
                 product_data.extend(search_function(category))
                 product_data = list(set(product_data))
+    else:
+        product_data = ProductData.objects.all() 
     if not search_id:
         search_id = uuid.uuid4()
         # Redis Logic
 
     paginator = Paginator(product_data, limit)  # Show 10 objects per page
-    # page_number = request.GET.get("page") if request.GET.get("page") else 1
     try:
         product_page_objects = paginator.page(offset)
     except PageNotAnInteger:
@@ -223,9 +202,3 @@ def Search_Products(request):
         product_page_objects, many=True, context={"request": request}
     )
     return JsonResponse(serializer.data, safe=False)
-
-    # call the gemini API to get categories on the search prompt provided in the query of the get request
-
-    print("categories", categories)
-
-    return JsonResponse({"status": "success", "categories": product_data}, status=200)
