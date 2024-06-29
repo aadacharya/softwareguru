@@ -4,12 +4,15 @@ import Image from "next/image";
 import styles from "./product_card_big.module.css";
 
 const ProductCardBig = ({product_data}) => {
+  const  product_name= product_data["product_name"];
+  const  product_unique_id  = product_data["product_unique_id"];
+  const product_page_url = `/${encodeURIComponent(product_name)}/${encodeURIComponent(product_unique_id)}`;
+
   return (
-    // <Link href={product_data["product_unique_id"]}>
       <div className={styles.productCardMain}>
         <div className={styles["productHead"]}>
           <div className={styles["productName"]}>
-            <Link href={product_data["product_unique_id"]}>
+            <Link href={product_page_url}>
               <div className={styles["name"]}>{product_data["product_name"]}</div>
             </Link>
             <div className={styles["productLink"]}>
@@ -23,7 +26,7 @@ const ProductCardBig = ({product_data}) => {
               </Link>
             </div>
           </div>
-          <Link href={product_data["product_unique_id"]}>
+          <Link href={product_page_url}>
             <div className={styles["productRating"]}>
               <Image width={24} height={24} alt="Star" src="./star.svg" />
               <h1>{product_data["product_rating"]}/10</h1>
@@ -32,7 +35,7 @@ const ProductCardBig = ({product_data}) => {
         </div>
         
           <div className={styles["productImage"]}>
-          <Link href={product_data["product_unique_id"]}>
+          <Link href={product_page_url}>
           <Image width={3000} height={1000} alt='Logo' src={product_data["images"][0]["image"]}/>
         </Link>
           </div>

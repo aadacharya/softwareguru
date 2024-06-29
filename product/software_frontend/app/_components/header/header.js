@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className={styles.headerMain}>
         <div className={styles["headerLogo"]}> 
-        <Image src ="./logo.svg" width={150} height={150} alt="Logo"></Image>
+        <Image src ="/logo.svg" width={150} height={150} alt="Logo"></Image>
         </div>
         <div className={styles["headerComponent"]}> 
         <div className={styles["headerComponentEach"]}> <Link href='/'>Products</Link> </div>

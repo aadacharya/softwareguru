@@ -1,5 +1,3 @@
-# TODO 
-#  Save the failed index on a file for later debugging and retieval 
 
 import pandas as pd 
 from selenium import webdriver
@@ -21,7 +19,7 @@ class Product_Meta_Processor:
         product_metadata = self.process_topai_metadata(self.product_topai_metadata_file)
         self.runner(product_metadata)
     def runner(self,product_metadata):
-        index = 83 
+        index = 463
         for counter in range(index,index+500): 
             product_name = product_metadata["product_name"][counter]
             product_website_url = product_metadata["product_url"][counter]
@@ -142,7 +140,6 @@ class Product_Meta_Processor:
         # import json 
         return answer
 
-# Product_Meta_Processor()
 
 class Product_Content_Processor:
     def __init__(self) -> None:

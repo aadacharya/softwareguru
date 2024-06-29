@@ -10,4 +10,4 @@ delete_product_data = "delete/7d90faa1-6800-4150-a7de-88197f61df0c"
 delete_product_image = "delete/5fdd0a9f-a2b5-4ae1-82a2-ccf428a6cdf1"
 get_csfr_token = "e70c1f90-e648-4602-97b1-a8b31cd42cd4"
 
-backend_url = "http://127.0.0.1:8000/softwareguru"
+backend_url = "http://127.0.0.1:8000/softwareguru/"

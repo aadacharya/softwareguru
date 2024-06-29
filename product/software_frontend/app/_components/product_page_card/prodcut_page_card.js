@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./product_page_card.module.css";
-import { Prosto_One } from "next/font/google";
+import ProductImageDiv from "./component/prodcut_image_div";
+import Link from "next/link";
 
 const ProductPageCard = async ({ product_unique_id }) => {
-  // console.log('http://127.0.0.1:8000/softwareguru/get_product?product_unique_id='+product_unique_id)
   const res = await fetch(
     "http://127.0.0.1:8000/softwareguru/get_product?product_unique_id=" +
       product_unique_id
@@ -14,7 +14,7 @@ const ProductPageCard = async ({ product_unique_id }) => {
     return <div>Error: Failed to fetch data</div>;
   }
   const product_data = await res.json();
-  console.log(product_data);
+
   return (
     <div className={styles.productPageCardMain}>
       <div className={styles["productPageCardHead"]}>
@@ -23,42 +23,22 @@ const ProductPageCard = async ({ product_unique_id }) => {
             {" "}
             {product_data["product_name"]}
           </div>
-          {/* <div className={styles["productPageCardHeadCategories"]}>
-            {product_data["product_categories"].map((items) => (
-              <div
-                key={items}
-                className={styles["productPageCardHeadCategory"]}
-              >
-                {" "}
-                {items}
-              </div>
-            ))}
-          </div> */}
         </div>
         <div className={styles["productPageCardHeadRating"]}>
-          <Image width={24} height={24} alt="Star" src="./star.svg" />
+          <Image width={24} height={24} alt="Star" src="/star.svg" />
           <h1>{product_data["product_rating"]}/10</h1>
         </div>
       </div>
-      <div className={styles["productPageCardImage"]}>
-        <Image
-          width={3000}
-          height={1000}
-          alt="Logo"
-          src={product_data["images"][0]["image"]}
-        />
-      </div>
+      <ProductImageDiv product_images={product_data["images"]} />
       <div className={styles["productPageCardHeadCategories"]}>
-            {product_data["product_categories"].map((items) => (
-              <div
-                key={items}
-                className={styles["productPageCardHeadCategory"]}
-              >
-                {" "}
+        {product_data["product_categories"].map((items) => (
+          <div key={items} className={styles["productPageCardHeadCategory"]}>
+            <Link href={{ pathname: '/product_home', query: { categories_list: [items] } }}>
                 {items}
-              </div>
-            ))}
+              </Link>
           </div>
+        ))}
+      </div>
       <div className={styles[""]}></div>
       <div className={styles[""]}></div>
       <div className={styles["productPageCardProCon"]}>
@@ -82,20 +62,20 @@ const ProductPageCard = async ({ product_unique_id }) => {
       <div className={styles["productPageCardUseCase"]}>
         <h1> Use Cases </h1>
         {product_data["product_usecases"].map((items) => (
-            <div key={items["usecase"]}>
-                <li > {items["usecase"]}: </li>
-                <h2 > {items["details"]} </h2>
-            </div>
-          ))}
+          <div key={items["usecase"]}>
+            <li> {items["usecase"]}: </li>
+            <h2> {items["details"]} </h2>
+          </div>
+        ))}
       </div>
       <div className={styles["productPageCardToolFor"]}>
         <h1> Tool For </h1>
         {product_data["product_toolfor"].map((items) => (
-            <div key={items["target"]}>
-                <li > {items["target"]}: </li>
-                <h2 > {items["details"]} </h2>
-            </div>
-          ))}
+          <div key={items["target"]}>
+            <li> {items["target"]}: </li>
+            <h2> {items["details"]} </h2>
+          </div>
+        ))}
       </div>
       <div className={styles[""]}></div>
     </div>

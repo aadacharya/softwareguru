@@ -1,0 +1,50 @@
+.productImageDivMain{
+    display: flex;
+    flex-direction: column;
+}
+.productImageDivMain .productImage{
+    overflow: hidden;
+    padding:  1rem 0 0 0 ;
+    border: 8px;
+    margin-bottom: 1rem;
+}
+
+.productImage img{
+    border-radius: 8px;
+    width: 100%;
+}
+
+.productImageDivMain .productChange{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* padding: 1rem; */
+    /* justify-content: space-around; */
+    /* width: 50%; */
+}
+
+.productChange .productChangeBarActive{
+    width: 65px;
+    height: 4px;
+    gap: 0px;
+    border-radius: 4px ;
+    opacity: 0px;
+    background: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    margin: 0 1rem;
+    margin-bottom: 2rem;
+}
+
+.productChange .productChangeBarDeactive{
+    width: 65px;
+    height: 4px;
+    gap: 0px;
+    border-radius: 4px ;
+    opacity: 0px;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    margin: 0 1rem;
+    margin-bottom: 2rem;
+}
+
