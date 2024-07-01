@@ -16,10 +16,8 @@ const SimilarProduct = async () => {
       <h1>Similar Products</h1>
       <div className={styles.similarProductList}>
       {products_data.map((product_data) => (
-          <div className={styles["similarProduct"]}>
-            <Link key={product_data["product_unique_id"]}href={product_data["product_url"]}>
+          <div className={styles["similarProduct"]} key={products_data.product_unique_id} >
               <ProductCardSmall product_data={product_data} key={product_data["product_unique_id"]}/>
-            </Link>
           </div>
         ))}    
       </div>

@@ -14,14 +14,19 @@
 .similarProductList {
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+    /* overflow: hidden; */
     align-items: center;
     justify-content: space-between;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Ensure contents stay in a single line */
     
 }
 
 .similarProductList .similarProduct{
-    width: 400px;
+    width: 100%;
     height: auto;
     padding:  0 0 1rem 1rem ;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Ensure contents stay in a single line */
+
 }

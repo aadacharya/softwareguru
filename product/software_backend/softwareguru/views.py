@@ -72,7 +72,7 @@ def Get_Featured_Products(request):
 @api_view(["GET"])
 def Get_Similar_Products(request):
     products = ProductData.objects.all()
-    paginator = Paginator(products, 3)  # Show 10 objects per page
+    paginator = Paginator(products, 4)  # Show 10 objects per page
     page_number = request.GET.get("page") if request.GET.get("page") else 1
     try:
         product_page_objects = paginator.page(page_number)
@@ -192,11 +192,18 @@ def Search_Products(request):
         product_page_objects = paginator.page(1)
     except EmptyPage:
         product_page_objects = paginator.page(paginator.num_pages)
+    
+    if len(product_page_objects) < 10 : 
+        print("####################### " , len(product_page_objects))
+        additional_products = ProductData.objects.order_by('?')[:10-len(product_page_objects)]
+        product_page_objects.object_list += list(additional_products)
+        print("####################### " , len(product_page_objects))
     serializer = ProductMetaDataSerializer(
         product_page_objects, many=True, context={"request": request}
     )
     import random
     data = serializer.data
+    
     return JsonResponse(data, safe=False)
 
 @api_view(["GET"])

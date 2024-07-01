@@ -16,9 +16,7 @@ const FeaturedProduct = async () => {
     <div className={styles.featuredProductMain}>
       <h1>Featured Products</h1>
       {products_data.map((product_data) => (
-          <Link key={product_data["product_unique_id"]}href={product_data["product_url"]}>
             <ProductCardSmall product_data={product_data} key={product_data["product_unique_id"]}/>
-          </Link>
         ))}    
     </div>
   )
