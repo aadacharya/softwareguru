@@ -7,7 +7,7 @@ import Header from "@/app/_components/header/header";
 import Footer from "@/app/_components/footer/footer";
 
 const ProdcutHome = ({params}) => {
-const categories_list = params.categories
+const categories_list = params.categories.split('%2C')
 const page = params.page
 console.log("****************** " , params)
   return (
@@ -20,7 +20,8 @@ console.log("****************** " , params)
           your productivity by 10x.
         </h1>
         <div className={styles.productHomeList}>
-          <ProductList categories_list={[categories_list]} page_number={page}/>
+          {/* <ProductList categories_list={[categories_list]} page_number={page}/> */}
+          <ProductList categories_list={categories_list} page_number={page}/>
           <FeaturedProduct />
         </div>
       </div>

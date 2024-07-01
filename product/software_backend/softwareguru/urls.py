@@ -5,6 +5,7 @@ from . import properties
 urlpatterns = [
     # Get_Product
     path("get_product", views.Get_Product, name="get_product"),
+    path("get_categories", views.Get_Gemini_Categories, name="get_featured_products"),
     path("get_featured_products", views.Get_Featured_Products, name="get_featured_products"),
     path("get_similar_products", views.Get_Similar_Products, name="get_similar_products"),
     path("get_products", views.Get_All_Products, name="get_all_products"),
