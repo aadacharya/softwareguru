@@ -11,6 +11,7 @@ const FeaturedProduct = async () => {
       return <div>Error: Failed to fetch data</div>;
     }
     const products_data = await res.json();
+    // console.log("Products Loades ---------> " , products_data)
   return (
     <div className={styles.featuredProductMain}>
       <h1>Featured Products</h1>

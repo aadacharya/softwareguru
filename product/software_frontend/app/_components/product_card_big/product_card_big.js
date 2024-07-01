@@ -6,7 +6,7 @@ import styles from "./product_card_big.module.css";
 const ProductCardBig = ({product_data}) => {
   const  product_name= product_data["product_name"];
   const  product_unique_id  = product_data["product_unique_id"];
-  const product_page_url = `/${encodeURIComponent(product_name)}/${encodeURIComponent(product_unique_id)}`;
+  const product_page_url = `/product/${encodeURIComponent(product_name)}/${encodeURIComponent(product_unique_id)}`;
 
   return (
       <div className={styles.productCardMain}>
@@ -28,7 +28,7 @@ const ProductCardBig = ({product_data}) => {
           </div>
           <Link href={product_page_url}>
             <div className={styles["productRating"]}>
-              <Image width={24} height={24} alt="Star" src="./star.svg" />
+              <Image width={24} height={24} alt="Star" src="/star.svg" />
               <h1>{product_data["product_rating"]}/10</h1>
             </div>
           </Link>
@@ -46,7 +46,7 @@ const ProductCardBig = ({product_data}) => {
           <div className={styles["productCategoires"]}>
           {product_data["product_categories"].map((items) => (
             <div key={items} className={styles["productCategory"]}> 
-              <Link href={{ pathname: '/product_home', query: { categories_list: [items] } }}>
+              <Link href={`/${items}/1`}>
                 {items}
               </Link>
                 </div>

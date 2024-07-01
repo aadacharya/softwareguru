@@ -2,3 +2,32 @@
     background-color: white;
     color: black;
 }
+.productHomeMain {
+    background-color: #070125;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem 0 2rem;
+    border-radius: 48px 48px 0px 0px;
+    padding: 2rem;
+    align-items: center;
+    
+}
+
+.productHomeMain h1{
+    padding: 1rem;
+    font-size: 18px;
+}
+
+.productHomeMain span{
+    color: rgba(54, 78, 239, 1);    
+    font-weight: bold;
+
+}
+
+.productHomeList{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* align-items: left; */
+}

@@ -33,7 +33,7 @@ const ProductPageCard = async ({ product_unique_id }) => {
       <div className={styles["productPageCardHeadCategories"]}>
         {product_data["product_categories"].map((items) => (
           <div key={items} className={styles["productPageCardHeadCategory"]}>
-            <Link href={{ pathname: '/product_home', query: { categories_list: [items] } }}>
+            <Link href={`/${items}/1`}>
                 {items}
               </Link>
           </div>

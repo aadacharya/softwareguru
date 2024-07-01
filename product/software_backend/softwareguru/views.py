@@ -13,13 +13,15 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from .search import get_categories_from_prompt
 import uuid
 
+from random import shuffle
+
 
 @ensure_csrf_cookie
 def Set_CSRF_Cookie(request):
     return JsonResponse({})
 
 
-# Create your views here.
+
 @api_view(["GET"])
 def Get_Product(request):
     product_filter = request.GET.get("product_unique_id", None)
@@ -50,6 +52,7 @@ def Get_All_Products(request):
     return JsonResponse(serializer.data, safe=False)
 @api_view(["GET"])
 def Get_Featured_Products(request):
+    print("---------> Finding the featured products")
     products = ProductData.objects.filter(product_featured = True)
     paginator = Paginator(products, 20)  # Show 10 objects per page
     page_number = request.GET.get("page") if request.GET.get("page") else 1
@@ -133,25 +136,10 @@ def upload_category_data(request):
     return JsonResponse({"success": True})
 
 
-def Delete_Product_Data(request):
-    pass
-
-
-def Upload_Product_Image(request):
-    pass
-
-
-def Delete_Product_Image(request):
-    pass
-
-
 def Search_Products(request):
-    # print("-------> In search function")
 
     def search_function(category):
         categories = CategoryData.objects.filter(category_name__contains=category)
-        print("-----> inside search function " , category , len(categories))
-        # print("categories", categories)
         product_unique_id_list = []
         for each_catergory in categories:
             product_unique_id_list.extend(each_catergory.product_uuid_list)
@@ -174,7 +162,6 @@ def Search_Products(request):
     elif categories_list:
         for each_category in categories_list:
             search_categories = [each_category] + each_category.split(" ")
-            # print("-------> In search function Categories Found" , search_categories)
             for category in search_categories:
                 product_data.extend(search_function(category))
                 product_data = list(set(product_data))

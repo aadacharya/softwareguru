@@ -1,20 +1,29 @@
-import Image from "next/image";
-import Link from "next/link";
+import React from "react";
+import styles from "./home.module.css";
+import SearchBar from "./_components/search_bar/search_bar";
+import ProductList from "./_components/product_list/product_list";
+import FeaturedProduct from "./_components/featured_products/feature_product";
 import Header from "./_components/header/header";
 import Footer from "./_components/footer/footer";
-import styles from "./home.module.css"
-import ProdcutHome from "./_components/product_home/product_home";
-import PopUp from "./_components/popup/popup";
 
-
-export default function Home() {
+const ProdcutHome = () => {
   return (
     <div className={styles.homeMain}>
-      <Header/>
-      <ProdcutHome/>
-      <Footer/>
-      <PopUp popupText="You can provide prompts like “I need an AI-based communication tool that would efficiently manage my sales calls.” "/>
-
+      <Header />
+      <div className={styles.productHomeMain}>
+        <SearchBar />
+        <h1>
+          Find the AI tools you need from <span>20000</span> products to boost
+          your productivity by 10x.
+        </h1>
+        <div className={styles.productHomeList}>
+          <ProductList categories_list={[]} page_number={1}/>
+          <FeaturedProduct />
+        </div>
+      </div>
+      <Footer />
     </div>
-      );
-}
+  );
+};
+
+export default ProdcutHome;
