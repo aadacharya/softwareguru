@@ -36,6 +36,5 @@
 
 .productCategorySingle:hover {
   background: rgba(80, 80, 234, 0.8);
-  max-width: 70%;
   cursor: pointer;
 }
