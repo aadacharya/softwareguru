@@ -1,0 +1,16 @@
+.productCategories {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+
+  /* justify-content: ; */
+}
+
+.productCategory {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
