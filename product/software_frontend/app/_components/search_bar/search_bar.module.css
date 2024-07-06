@@ -1,96 +1,100 @@
-.searchBarNonSticky{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.searchBarNonSticky {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .searchBarSticky {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0 ;
-    right: 0;
-    z-index: 1000;
-    padding: 0.25rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0.25rem;
 }
 
 .searchBarMain {
-    background-color: rgba(54, 78, 239, 0.2);
-    border: 0.5px solid rgba(54, 78, 239, 1);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 60%;
-    border-radius: 100px;
-    padding: 0.75rem;
-    
+  background-color: rgba(54, 78, 239, 0.2);
+  border: 0.5px solid rgba(54, 78, 239, 1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+  border-radius: 100px;
+  padding: 0.75rem;
 }
 
 .searchBarMainSticky {
-    background-color: rgba(255, 255, 255, 1);
-    border: 2px solid rgba(54, 78, 239, 1);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 60%;
-    border-radius: 100px;
-    padding: 0.75rem;
-    
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(54, 78, 239, 1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+  border-radius: 100px;
+  padding: 0.75rem;
 }
-.searchBarMain .searchIcon{
-    width: 5%;
+.searchBarMain .searchIcon {
+  width: 5%;
 }
-.searchBarMain .searchIcon img { 
-    background-color: transparent;
-    padding: 0 5px 0 5px;
-    height: 100%;
-    cursor: pointer;
+.searchBarMain .searchIcon img {
+  background-color: transparent;
+  padding: 0 5px 0 5px;
+  height: 100%;
+  cursor: pointer;
 }
 
-.searchBarMain input{
-    width: 100%;
-    height: 95%;
-    background-color: transparent;
-    border-radius: 0 100px 100px 0;
-    font-weight: 200;
-    font-size: 14px;
-    color: #FFFFFF;
-    margin-left: 0.5rem;
+.searchBarMain input {
+  width: 100%;
+  height: 95%;
+  background-color: transparent;
+  border-radius: 0 100px 100px 0;
+  font-weight: 200;
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: 0.5rem;
 }
 
 .searchBarMain input:focus {
-    outline: none; /* Removes the default outline on focus */
-    border: none;
-  }
-
-.searchBarMainSticky .searchIcon{
-    width: 5%;
-  }
-.searchBarMainSticky .searchIcon img{
-    background-color: transparent;
-    padding: 0 5px 0 5px;
-    /* width: 5%; */
-    height: 100%;
-    cursor: pointer;
+  outline: none; /* Removes the default outline on focus */
+  border: none;
 }
 
-.searchBarMainSticky input{
-    width: 100%;
-    height: 95%;
-    background-color: transparent;
-    border-radius: 0 100px 100px 0;
-    font-weight: 500;
-    font-size: 14px;
-    color: #FFFFFF;
-    color: black;
-    margin-left: 0.5rem;
+.searchBarMainSticky .searchIcon {
+  width: 5%;
+}
+.searchBarMainSticky .searchIcon img {
+  background-color: transparent;
+  padding: 0 5px 0 5px;
+  /* width: 5%; */
+  height: 100%;
+  cursor: pointer;
+}
+
+.searchBarMainSticky input {
+  width: 100%;
+  height: 95%;
+  background-color: transparent;
+  border-radius: 0 100px 100px 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  color: black;
+  margin-left: 0.5rem;
 }
 
 .searchBarMainSticky input:focus {
-    outline: none; /* Removes the default outline on focus */
-    border: none;
-  }
+  outline: none; /* Removes the default outline on focus */
+  border: none;
+}
+
+.spinner {
+  height: 16px;
+  width: 16px;
+  margin-left: 8px;
+}
