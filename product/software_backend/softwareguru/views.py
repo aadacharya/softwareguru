@@ -164,17 +164,25 @@ def Search_Products(request):
         for each_category in categories_list:
             search_category.append(each_category)
             main_product_set.extend(search_function(each_category))
-            for i in range(5): print ( "List >>>>>> " , main_product_set[i].product_unique_id , each_category , len(main_product_set))
+            # for i in range(5): print ( "Main >>>>>> " , main_product_set[i].product_unique_id , each_category , len(main_product_set))
         for each_category in categories_list:
             for each_splitted in each_category.split(" "): 
                 if each_splitted not in search_category: 
                     search_category.append(each_splitted)
                     main_product_set.extend(search_function(each_splitted))
+                    # for i in range(5): print ( "Split >>>>>> " , main_product_set[i].product_unique_id , each_splitted , len(main_product_set))
     else: 
         main_product_set = ProductData.objects.all()
     if not search_id: search_id = uuid.uuid4()
-    main_product_set = list(set(main_product_set))
-    for i in range(5): print ( "List >>>>>> " , main_product_set[i].product_unique_id , len(main_product_set))
+    temp_list = []
+    product_data = []
+    for data in main_product_set: 
+        if data.product_unique_id in temp_list: continue
+        temp_list.append(data.product_unique_id)
+        product_data.append(data)
+    main_product_set = product_data
+    # main_product_set = list(set(main_product_set))
+    # for i in range(5): print ( "List >>>>>> " , main_product_set[i].product_unique_id , len(main_product_set) , type(main_product_set[0]))
     paginator = Paginator(main_product_set, limit)  # Show 10 objects per page
     try:
         product_page_objects = paginator.page(offset)
