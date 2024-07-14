@@ -140,71 +140,54 @@ def upload_category_data(request):
 
 
 def Search_Products(request):
-
+    main_product_set = list()
     def search_function(category):
+        # product_data = []
         categories = CategoryData.objects.filter(category_name__contains=category)
         products = ProductData.objects.filter(product_name__contains=category)
-        print("Length ----> " , len(categories) , len(products) , category)
         product_unique_id_list = []
-        for each_catergory in categories:
-            product_unique_id_list.extend(each_catergory.product_uuid_list)
-        for each_product in products:
-            product_unique_id_list.append(each_product.product_unique_id) 
-        product_data = ProductData.objects.filter(
-            product_unique_id__in=product_unique_id_list
-        )
-        product_map = {product.product_unique_id: product for product in product_data}
-        product_data = [product_map[unique_id] for unique_id in product_unique_id_list]
-        return product_data
+        for each_catergory in categories: product_unique_id_list.extend(each_catergory.product_uuid_list)
+        for each_product in products: product_unique_id_list.append(each_product.product_unique_id) 
+        product_data = ProductData.objects.filter(product_unique_id__in=product_unique_id_list)
+        print("Length ----> " , len(categories) , len(products) , category , len(product_data) , type(product_data))
+        # for each in categories: print(each.category_name)
+        return list(product_data)
     prompt = request.GET.get("prompt", None)
     categories_list = (request.GET.get("categories_list", None).lower()).split(",")
     search_id = request.GET.get("search_id", None)
     sort_by = request.GET.get("sort_by", None)
     limit = request.GET.get("limit", 10)
     offset = request.GET.get("offset", 1)
-    product_data = []
-    if search_id:
-        # Redis Logic
-        product_data = None
-        return
+    if search_id: product_data = None
     elif categories_list and len(categories_list[0])!=0:
         search_category = []
         for each_category in categories_list:
-            product_data.extend(search_function(each_category))
-            product_data = list(set(product_data))
             search_category.append(each_category)
+            main_product_set.extend(search_function(each_category))
+            for i in range(5): print ( "List >>>>>> " , main_product_set[i].product_unique_id , each_category , len(main_product_set))
         for each_category in categories_list:
             for each_splitted in each_category.split(" "): 
                 if each_splitted not in search_category: 
-                    product_data.extend(search_function(each_splitted))
-                    product_data = list(set(product_data))
                     search_category.append(each_splitted)
-    else:
-        product_data = ProductData.objects.all() 
-    if not search_id:
-        search_id = uuid.uuid4()
-        # Redis Logic
-    print("--------> Total products" , len(product_data))
-    paginator = Paginator(product_data, limit)  # Show 10 objects per page
+                    main_product_set.extend(search_function(each_splitted))
+    else: 
+        main_product_set = ProductData.objects.all()
+    if not search_id: search_id = uuid.uuid4()
+    main_product_set = list(set(main_product_set))
+    for i in range(5): print ( "List >>>>>> " , main_product_set[i].product_unique_id , len(main_product_set))
+    paginator = Paginator(main_product_set, limit)  # Show 10 objects per page
     try:
         product_page_objects = paginator.page(offset)
     except PageNotAnInteger:
         product_page_objects = paginator.page(1)
     except EmptyPage:
         product_page_objects = paginator.page(paginator.num_pages)
-    
     if len(product_page_objects) < 10 : 
-        print("####################### " , len(product_page_objects))
         additional_products = ProductData.objects.order_by('?')[:10-len(product_page_objects)]
         product_page_objects.object_list += list(additional_products)
-        print("####################### " , len(product_page_objects))
-    serializer = ProductMetaDataSerializer(
-        product_page_objects, many=True, context={"request": request}
-    )
+    serializer = ProductMetaDataSerializer(product_page_objects, many=True, context={"request": request})
     import random
-    data = serializer.data
-    
-    return JsonResponse(data, safe=False)
+    return JsonResponse(serializer.data, safe=False)
 
 @api_view(["GET"])
 def Get_Gemini_Categories(request):
