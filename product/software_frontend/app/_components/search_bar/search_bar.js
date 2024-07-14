@@ -62,7 +62,14 @@ const SearchBar = () => {
       <div
         className={isSticky ? styles.searchBarMainSticky : styles.searchBarMain}
       >
-        <div className={styles.searchIcon} onClick={handleSearch}></div>
+        <div className={styles.searchIcon} onClick={handleSearch}>
+          <Image
+            src="/search.svg" // Ensure this path is correct and the image is in the public directory
+            width={30}
+            height={30}
+            alt="Search"
+          />
+        </div>
         <input
           type="text"
           placeholder="Enter your prompt or search for products/categories"
