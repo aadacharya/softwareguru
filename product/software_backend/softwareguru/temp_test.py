@@ -13,8 +13,14 @@ headers = {"X-CSRFToken": csrf_token}  # CSRF token for security
 
 # print("here", base_url + properties.update_category_data)
 
+# response = session.post(
+#     base_url + properties.update_category_data,
+#     data={},
+#     files={},
+#     headers=headers,
+# )
 response = session.post(
-    base_url + properties.update_category_data,
+    base_url + properties.update_category_main,
     data={},
     files={},
     headers=headers,

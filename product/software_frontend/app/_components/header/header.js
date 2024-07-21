@@ -23,7 +23,7 @@ const Header = () => {
           {' '}
           <Link href="/">Products</Link>{' '}
         </div>
-        <div className={styles['headerComponentEach']}> Categories </div>
+        <div className={styles['headerComponentEach']}> <Link href="/categories">Categories</Link> </div>
         <div className={styles['headerComponentEach']}> Blogs </div>
       </div>
       <div className={styles['headerMember']}>

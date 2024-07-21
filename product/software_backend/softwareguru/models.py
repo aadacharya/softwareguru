@@ -31,3 +31,8 @@ class ProductImage(models.Model):
 class CategoryData(models.Model):
     category_name = models.TextField()
     product_uuid_list = models.JSONField()
+
+class CategoryMain(models.Model):
+    main_category_name = models.TextField()
+    category_list = models.JSONField()
+    

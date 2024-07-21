@@ -21,4 +21,5 @@ urlpatterns = [
         views.upload_category_data,
         name="update_category_data",
     ),
+    path(f"{properties.update_category_main}",views.upload_main_category,name="update_main_category"),
 ]
